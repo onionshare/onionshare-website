@@ -1,8 +1,39 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+
+
 #wrapper {
+  padding: 20px;
+  font-family: 'Roboto Slab';
+}
+
+#header {
+  border-bottom: 1px solid #999;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#header #logo {
   text-align: center;
-  padding: 90px;
+}
+#header #logo img {
+  max-width: 70%;
+}
+#header #slogan {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #666;
+  font-family: serif;
 }
 
 #content {
-  font-size: 2em;
 }
