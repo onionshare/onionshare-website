@@ -11,6 +11,12 @@
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
 }
 
+img#fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
 
 #wrapper {
   padding: 20px;
