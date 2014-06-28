@@ -28,6 +28,10 @@ a#small{
   font-size: 10px;
 }
 
+a#mirror{
+  font-size: 12px;
+}
+
 img#fork {
   position: absolute;
   top: 0;
@@ -55,7 +59,7 @@ img#fork {
 #header #slogan {
   margin-top: 20px;
   font-size: 22px;
-  color: #5c5c5c;
+  color: #4c4c4c;
   font-family: serif;
 }
 
