@@ -11,6 +11,15 @@
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
 }
 
+a:link, a:visited {
+  color: #1C25A6;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  color: #4048BD;
+  text-decoration: none;
+}
+
 img#fork {
   position: absolute;
   top: 0;
@@ -54,6 +63,9 @@ img#fork {
   display: inline-block;
 }
 
+#news {
+  clear: left;
+}
 #news ul {
   list-style: none;
   margin: 0;
