@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face
+{ 
+    font-family: pictonic;
+    src: url("../fonts/pictonic.eot");
+    src: url("../fonts/pictonic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/pictonic.ttf") format("truetype"),
+        url("../fonts/pictonic.woff") format("woff"),
+        url("../fonts/pictonic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+.icon
+{
+	font-family: "pictonic";
+	font-weight: normal; font-style: normal;
+	-webkit-font-smoothing:  antialiased !important;
+	-moz-font-smoothing:  antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important; 
+	font-smoothing:  antialiased !important;
+	line-height:1em;
+}
+ 
+a.icon, span.icon, small.icon {
+	display: -moz-inline-stack;
+	display:inline-block;
+	zoom: 1;
+	*display: inline;
+}
+ 
+[class^="icon-"], [class*="icon-"]
+{
+	font-family: "pictonic";
+	font-weight: normal; font-style: normal;
+	-webkit-font-smoothing:  antialiased !important;
+	-moz-font-smoothing:  antialiased !important;
+	font-smoothing:  antialiased !important;
+	line-height:1em;
+}
+ 
+a[class^="icon-"], a[class*="icon-"], span[class^="icon-"], span[class*="icon-"], small[class^="icon-"], small[class*="icon-"] {
+	display: -moz-inline-stack;
+	display:inline-block;
+	zoom: 1;
+	*display: inline;
+}
+  
+.icon-github-01:before { content:""; } 
+.icon-twitter-3:before { content:""; } 
+.icon-kub-download:before { content:""; } 
+.icon-windows:before { content:""; } 
+.icon-apple:before { content:""; } 
+.icon-os-osx_1_:before { content:""; } 
+.icon-lin-ubuntu:before { content:""; } 
+.icon-lin-debian:before { content:""; } 
+.icon-lin-centos:before { content:""; } 
+.icon-lin-redhat:before { content:""; } 
+.icon-lin-fedora:before { content:""; } 
+.icon-oxp-lock:before { content:""; } 
+.icon-mail:before { content:""; }
