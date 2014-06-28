@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: [
-          { dest: 'dist/', src: ['.htaccess', 'favicon.ico'] },
+          { dest: 'dist/', src: ['.htaccess', 'favicon.ico', 'signing-key.asc'] },
           { dest: 'dist/', src: 'assets/fonts/**' },
           { dest: 'dist/', src: 'assets/img/**' }
         ]
@@ -59,6 +59,8 @@ module.exports = function(grunt) {
       compress: {
         files: {
           'dist/assets/js/pack-<%= pkg.version %>.js': [
+            'assets/js/jquery-1.11.1.min.js',
+            'assets/js/verify.js'
           ]
         }
       }

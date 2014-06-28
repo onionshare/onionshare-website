@@ -41,5 +41,11 @@ img#fork {
   font-family: serif;
 }
 
-#content {
+#verify-more-link {
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 2px 4px;
+  font-size: 12px;
+  border-radius: 3px;
 }
