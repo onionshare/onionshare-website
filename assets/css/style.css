@@ -24,6 +24,10 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+a#small{
+  font-size: 12px;
+}
+
 img#fork {
   position: absolute;
   top: 0;
