@@ -16,6 +16,8 @@ img#fork {
   top: 0;
   right: 0;
   border: 0;
+  width: 100px;
+  height: 100px;
 }
 
 #wrapper {
@@ -32,7 +34,8 @@ img#fork {
   text-align: center;
 }
 #header #logo img {
-  max-width: 70%;
+  width: 70%;
+  max-width: 300px;
 }
 #header #slogan {
   margin-top: 20px;
@@ -48,4 +51,57 @@ img#fork {
   padding: 2px 4px;
   font-size: 12px;
   border-radius: 3px;
+  display: inline-block;
+}
+
+#footer {
+  border-top: 1px solid #999;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #666666;
+  font-size: 12px;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  img#fork {
+    width: 149px;
+    height: 149px;
+  }
+
+  #wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #header #logo {
+    float: left;
+    margin-right: 40px;
+  }
+  #header #logo img {
+    width: 150px;
+    height: 150px;
+  }
+  #header #slogan {
+    margin-top: 20px;
+    margin-right: 100px;
+    height: 150px;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  #content #download {
+    float: left;
+    width: 70%;
+  }
+
+  #content #verify {
+    float: left;
+    width: 30%;
+  }
+
 }

@@ -11,8 +11,8 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/img/logo.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="400">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
     <meta property="og:url" content="https://onionshare.org">
     <meta property="og:description" content="OnionShare lets you securely and anonymously share a file of any size with someone.">
     <script src="/assets/js/pack-@@version.js"></script>
@@ -21,34 +21,44 @@
     <div id="wrapper">
       <div id="header">
         <div id="logo"><img src="/assets/img/logo.png" title="OnionShare" /></div>
-          <div id="slogan"><strong>OnionShare</strong> is an open source tool that lets you securely and anonymously share a file of any size. Read more about how it works and how to use it on it's <a href="https://github.com/micahflee/onionshare/blob/master/README.md">Github page</a>.</div>
+        <div id="slogan"><strong>OnionShare</strong> is an open source tool that lets you securely and anonymously share a file of any size. Read more about how it works and how to use it on it's <a href="https://github.com/micahflee/onionshare/blob/master/README.md">Github page</a>.</div>
+        <div class="clear"></div>
       </div>
       <div id="content">
-        <h2>Download OnionShare 0.3dev</h2>
-        <p>
-          <strong>Windows</strong><br>
-          <a href="https://onionshare.org/files/0.3dev/OnionShare_Setup-0.3dev.exe">OnionShare for Windows</a><br>
-          <a href="https://onionshare.org/files/0.3dev/OnionShare_Setup-0.3dev.exe.asc">PGP signature</a>
-        </p>
-        <p>
-          <strong>Mac OS X</strong><br>
-          <a href="https://onionshare.org/files/0.3dev/OnionShare-0.3dev.dmg">OnionShare for Mac OS X</a><br>
-          <a href="https://onionshare.org/files/0.3dev/OnionShare-0.3dev.dmg.asc">PGP signature</a>
-        </p>
-        <p>
-          <strong>Linux</strong><br>
-          <a href="https://onionshare.org/files/0.3dev/onionshare_0.3dev-1_all.deb">OnionShare for Debian, Ubuntu, etc.</a><br>
-          <a href="https://onionshare.org/files/0.3dev/onionshare_0.3dev-1_all.deb.asc">PGP signature</a><br>
-          <a href="https://onionshare.org/files/0.3dev/onionshare-0.3dev-1.noarch.rpm">OnionShare for Red Hat, Fedora, etc.</a><br>
-          <a href="https://onionshare.org/files/0.3dev/onionshare-0.3dev-1.noarch.rpm.asc">PGP signature</a>
-        </p>
-
-        <h2>Verify your download</h2>
-        <p>When you download OnionShare from this website you're downloading over HTTPS, but it's still possible that an attacker with access to a browser-trusted certificate authority (such as a government) could perform a man-in-the-middle attack against you, swapping out the file you thought you downloaded with malware. <span id="verify-more-link"></span></p>
-        <div id="verify-more">
-          <p>To be completely sure that the download was not tampered with, you can verify the cryptographic PGP signature of the file you downloaded.</p>
-          <p>All OnionShare releases are digitally signed by <a href="/signing-key.asc">this PGP key</a> with fingerprint: 0B14 9192 9806 5962 5470 0155 FD72 0AD9 EBA3 4B1C.</p>
+        <div id="download">
+          <h2>Download OnionShare 0.3dev</h2>
+          <p>
+            <strong>Windows</strong><br>
+            <a href="https://onionshare.org/files/0.3dev/OnionShare_Setup-0.3dev.exe">OnionShare for Windows</a><br>
+            <a href="https://onionshare.org/files/0.3dev/OnionShare_Setup-0.3dev.exe.asc">PGP signature</a>
+          </p>
+          <p>
+            <strong>Mac OS X</strong><br>
+            <a href="https://onionshare.org/files/0.3dev/OnionShare-0.3dev.dmg">OnionShare for Mac OS X</a><br>
+            <a href="https://onionshare.org/files/0.3dev/OnionShare-0.3dev.dmg.asc">PGP signature</a>
+          </p>
+          <p>
+            <strong>Linux</strong><br>
+            <a href="https://onionshare.org/files/0.3dev/onionshare_0.3dev-1_all.deb">OnionShare for Debian, Ubuntu, etc.</a><br>
+            <a href="https://onionshare.org/files/0.3dev/onionshare_0.3dev-1_all.deb.asc">PGP signature</a><br>
+            <a href="https://onionshare.org/files/0.3dev/onionshare-0.3dev-1.noarch.rpm">OnionShare for Red Hat, Fedora, etc.</a><br>
+            <a href="https://onionshare.org/files/0.3dev/onionshare-0.3dev-1.noarch.rpm.asc">PGP signature</a>
+          </p>
         </div>
+
+        <div id="verify">
+          <h2>Verify your download</h2>
+          <p>When you download OnionShare from this website you're downloading over HTTPS, but it's still possible that an attacker with access to a browser-trusted certificate authority (such as a government) could perform a man-in-the-middle attack against you, swapping out the file you thought you downloaded with malware. <span id="verify-more-link"></span></p>
+          <div id="verify-more">
+            <p>To be completely sure that the download was not tampered with, you can verify the cryptographic PGP signature of the file you downloaded.</p>
+            <p>All OnionShare releases are digitally signed by <a href="/signing-key.asc">this PGP key</a> with fingerprint: 0B14 9192 9806 5962 5470 0155 FD72 0AD9 EBA3 4B1C.</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="footer">
+        OnionShare was developed by <a href="https://twitter.com/micahflee">Micah Lee</a> and is open source, released under the GPLv3. You can find the code for this website <a href="https://github.com/micahflee/onionshare-website">on Github</a> as well.
       </div>
     </div>
 
