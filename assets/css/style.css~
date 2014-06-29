@@ -11,25 +11,13 @@
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
 }
 
-body{
-  background-color: #eee;
-}
-
 a:link, a:visited {
   color: #1C25A6;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover, a:active {
   color: #4048BD;
   text-decoration: none;
-}
-
-a#small{
-  font-size: 10px;
-}
-
-a#mirror{
-  font-size: 12px;
 }
 
 img#fork {
@@ -37,6 +25,8 @@ img#fork {
   top: 0;
   right: 0;
   border: 0;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #wrapper {
@@ -59,7 +49,7 @@ img#fork {
 #header #slogan {
   margin-top: 20px;
   font-size: 22px;
-  color: #4c4c4c;
+  color: #666;
   font-family: serif;
 }
 
