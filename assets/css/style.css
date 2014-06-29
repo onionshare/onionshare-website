@@ -44,10 +44,14 @@ img#fork {
   font-family: 'Roboto Slab';
 }
 
-#header {
+#header-wrapper {
+  background-color: #ffffff;
   border-bottom: 1px solid #999;
+}
+#header {
   padding-bottom: 20px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 #header #logo {
   text-align: center;
@@ -106,6 +110,11 @@ img#fork {
   }
 
   #wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #header {
     max-width: 900px;
     margin: 0 auto;
   }
