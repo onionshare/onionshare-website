@@ -135,14 +135,15 @@ img#fork {
     display: table-cell;
   }
 
-  #content #download {
+  #content {
     float: left;
     width: 70%;
   }
 
-  #content #verify {
+  #sidebar {
     float: left;
-    width: 30%;
+    width: 28%;
+    margin-left: 2%;
   }
 
 }
