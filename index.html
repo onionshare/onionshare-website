@@ -15,57 +15,63 @@
     <meta property="og:image:height" content="300">
     <meta property="og:url" content="https://onionshare.org">
     <meta property="og:description" content="OnionShare lets you securely and anonymously share a file of any size.">
+    <link rel="localization" hreflang="en" href="locales/en.json" type="application/vnd.oftn.l10n+json"/>
+    <link rel="localization" hreflang="ru" href="locales/ru.json" type="application/vnd.oftn.l10n+json"/>
     <script src="/assets/js/pack-@@version.js"></script>
   </head>
   <body>
     <div id="header-wrapper">
       <div id="header">
+        <div class="lang">
+          <a id="en" href="#">English</a>
+          <a id="ru" href="#">Русский</a>
+        </div>
         <div id="logo"><img src="/assets/img/logo.png" title="OnionShare" /></div>
-        <div id="slogan"><strong>OnionShare</strong> is an open source tool that lets you securely and anonymously share a file of any size. Read more about how it works and how to use it on <a href="https://github.com/micahflee/onionshare/blob/master/README.md">GitHub</a>.</div>
+        <div id="slogan" data-l10n="slogan"><strong>OnionShare</strong> is an open source tool that lets you securely and anonymously share a file of any size. Read more about how it works and how to use it on <a href="https://github.com/micahflee/onionshare/blob/master/README.md">GitHub</a>.</div>
         <div class="clear"></div>
       </div>
     </div>
     <div id="wrapper">
       <div id="content">
         <div id="download">
-          <h2>Download OnionShare 0.3</h2>
+          <h2><span data-l10n="download">Download OnionShare</span> 0.3</h2>
           <p>
             <strong>Windows</strong><br/>
-            <a href="https://onionshare.org/files/0.3/OnionShare_Setup-0.3.exe">OnionShare for Windows</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare_Setup-0.3.exe">(Mirror)</a>--><br/>
-            <a id="mirror" href="https://onionshare.org/files/0.3/OnionShare_Setup-0.3.exe.asc">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare_Setup-0.3.exe.asc">(Mirror)</a>-->
+            <a href="https://onionshare.org/files/0.3/OnionShare_Setup-0.3.exe" data-l10n="for-windows">OnionShare for Windows</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare_Setup-0.3.exe">(<span data-l10n="mirror">Mirror</span>)</a>--><br/>
+            <a id="mirror" href="https://onionshare.org/files/0.3/OnionShare_Setup-0.3.exe.asc" data-l10n="pgp-sig">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare_Setup-0.3.exe.asc">(<span data-l10n="mirror">Mirror</span>)</a>-->
           </p>
           <p>
             <strong>Mac OS X</strong><br/>
-            <a href="https://onionshare.org/files/0.3/OnionShare-0.3.dmg">OnionShare for Mac OS X</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare-0.3.dmg">(Mirror)</a>--><br/>
-            <a id="mirror" href="https://onionshare.org/files/0.3/OnionShare-0.3.dmg.asc">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare-0.3.dmg.asc">(Mirror)</a>-->
+            <a href="https://onionshare.org/files/0.3/OnionShare-0.3.dmg" data-l10n="for-macosx">OnionShare for Mac OS X</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare-0.3.dmg">(<span data-l10n="mirror">Mirror</span>)</a>--><br/>
+            <a id="mirror" href="https://onionshare.org/files/0.3/OnionShare-0.3.dmg.asc" data-l10n="pgp-sig">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/OnionShare-0.3.dmg.asc">(<span data-l10n="mirror">Mirror</span>)</a>-->
           </p>
           <p>
-            <strong>Desktop Linux</strong><br/>
-            <a href="https://onionshare.org/files/0.3/onionshare_0.3-1_all.deb">OnionShare for Debian, Ubuntu, etc.</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare_0.3-1_all.deb">(Mirror)</a>--><br/>
-            <a id="mirror" href="https://onionshare.org/files/0.3/onionshare_0.3-1_all.deb.asc">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare_0.3-1_all.deb.asc">(Mirror)</a>--><br/>
-            <a href="https://onionshare.org/files/0.3/onionshare-0.3-1.noarch.rpm">OnionShare for Red Hat, Fedora, etc.</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare-0.3-1.noarch.rpm">(Mirror)</a>--><br/>
-            <a id="mirror" href="https://onionshare.org/files/0.3/onionshare-0.3-1.noarch.rpm.asc">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare-0.3-1.noarch.rpm.asc">(Mirror)</a>-->
+            <strong data-l10n="linux">Desktop Linux</strong><br/>
+            <a href="https://onionshare.org/files/0.3/onionshare_0.3-1_all.deb" data-l10n="for-debian">OnionShare for Debian, Ubuntu, etc.</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare_0.3-1_all.deb">(<span data-l10n="mirror">Mirror</span>)</a>--><br/>
+            <a id="mirror" href="https://onionshare.org/files/0.3/onionshare_0.3-1_all.deb.asc" data-l10n="pgp-sig">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare_0.3-1_all.deb.asc">(<span data-l10n="mirror">Mirror</span>)</a>--><br/>
+            <a href="https://onionshare.org/files/0.3/onionshare-0.3-1.noarch.rpm" data-l10n="for-redhat">OnionShare for Red Hat, Fedora, etc.</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare-0.3-1.noarch.rpm">(<span data-l10n="mirror">Mirror</span>)</a>--><br/>
+            <a id="mirror" href="https://onionshare.org/files/0.3/onionshare-0.3-1.noarch.rpm.asc" data-l10n="pgp-sig">PGP signature</a> <!--<a id="small" href="http://mirror.cryptostone.ch/files/0.3/onionshare-0.3-1.noarch.rpm.asc">(<span data-l10n="mirror">Mirror</span>)</a>-->
           </p>
           <p>
             <strong>Tails</strong><br/>
-            To install in your Tails persistent volume, follow <a href="https://github.com/micahflee/onionshare/blob/master/tails/README.md">these instructions</a>.
+            <span data-l10n="tails">To install in your Tails persistent volume, follow <a href="https://github.com/micahflee/onionshare/blob/master/tails/README.md">these instructions</a>.</span>
           </p>
         </div>
 
         <div id="verify">
-          <h2>Verify your download</h2>
-          <p>When you download OnionShare from this website you're downloading over HTTPS, but it's still possible that an attacker with access to a browser-trusted certificate authority (such as a government) could perform a man-in-the-middle attack against you, swapping out the file you thought you downloaded with malware. <span id="verify-more-link"></span></p>
+          <h2 data-l10n="verify">Verify your download</h2>
+          <p><span  data-l10n="verify-desc1">When you download OnionShare from this website you're downloading over HTTPS, but it's still possible that an attacker with access to a browser-trusted certificate authority (such as a government) could perform a man-in-the-middle attack against you, swapping out the file you thought you downloaded with malware.</span> <span id="verify-more-link"></span></p>
           <div id="verify-more">
-            <p>To be completely sure that the download was not tampered with, you can verify the cryptographic PGP signature of the file you downloaded.</p>
-            <p>All OnionShare releases are digitally signed by <a href="/signing-key.asc">this PGP key</a> with fingerprint: 0B14 9192 9806 5962 5470 0155 FD72 0AD9 EBA3 4B1C.</p>
-            <p>Detailed instructions for how to verify the authenticity of your downloads for all operating systems are coming.</p>
+            <p data-l10n="verify-desc2">To be completely sure that the download was not tampered with, you can verify the cryptographic PGP signature of the file you downloaded.</p>
+            <p data-l10n="verify-desc3">All OnionShare releases are digitally signed by <a href="/signing-key.asc">this PGP key</a> with fingerprint: 0B14 9192 9806 5962 5470 0155 FD72 0AD9 EBA3 4B1C.</p>
+            <p data-l10n="verify-desc4">Detailed instructions for how to verify the authenticity of your downloads for all operating systems are coming.</p>
           </div>
         </div>
       </div>
 
       <div id="sidebar">
         <div id="news">
-          <h2>In the News</h2>
+          <h2 data-l10n="news">In the News</h2>
           <ul>
             <li>
               <a href="http://www.wired.com/2014/05/onionshare/">
@@ -92,14 +98,14 @@
         </div>
 
         <div id="bugs">
-          <h2>Reporting Bugs</h2>
-          <p>Found a bug in OnionShare? Check the <a href="https://github.com/micahflee/onionshare/issues?state=open">issues page</a> to see if it's already been reported, or <a href="https://github.com/micahflee/onionshare/issues/new">open a new issue here</a>.</p>
+          <h2 data-l10n="bugs">Reporting Bugs</h2>
+          <p data-l10n="bugs-desc">Found a bug in OnionShare? Check the <a href="https://github.com/micahflee/onionshare/issues?state=open">issues page</a> to see if it's already been reported, or <a href="https://github.com/micahflee/onionshare/issues/new">open a new issue here</a>.</p>
         </div>
       </div>
 
       <div class="clear"></div>
 
-      <div id="footer">
+      <div id="footer" data-l10n="footer">
         OnionShare was developed by <a href="https://twitter.com/micahflee">Micah Lee</a> and is open source, released under the GPLv3. You can find the code for this website <a href="https://github.com/micahflee/onionshare-website">on Github</a> as well.
       </div>
     </div>

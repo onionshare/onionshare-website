@@ -2,13 +2,13 @@
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZmOb2gHztoQeulij-1lvl-8.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJVRROVH9Vvc8xHnAGvvgPQc.woff) format('woff');
 }
 
 body{
@@ -146,4 +146,16 @@ img#fork {
     margin-left: 2%;
   }
 
+}
+.lang {
+  text-align: right;
+  font-size: 10pt;
+}
+.lang a {
+  text-decoration: none;
+  margin: 1px;
+}
+.lang a:hover {
+  color: #f00000;
+  border-bottom: 1px dashed #000080;
 }
