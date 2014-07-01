@@ -2,13 +2,13 @@
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZmOb2gHztoQeulij-1lvl-8.woff) format('woff');
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(../fonts/RobotoSlab-Regular.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJVRROVH9Vvc8xHnAGvvgPQc.woff) format('woff');
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(../fonts/RobotoSlab-Bold.woff) format('woff');
 }
 
 body{
@@ -163,3 +163,4 @@ img#fork {
     font-size: 13px;
   }
 }
+
