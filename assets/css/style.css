@@ -32,13 +32,6 @@ a#mirror{
   font-size: 12px;
 }
 
-img#fork {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-}
-
 #wrapper {
   padding: 20px;
   font-family: 'Roboto Slab';
@@ -103,7 +96,7 @@ img#fork {
   clear: both;
 }
 .lang {
-  text-align: left;
+  text-align: right;
   font-size: 13px;
 }
 .lang a {
@@ -113,6 +106,10 @@ img#fork {
 .lang a:hover {
   color: #4048BD;
   text-decoration: none;
+}
+
+.github-fork-ribbon-wrapper {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -157,10 +154,11 @@ img#fork {
     width: 28%;
     margin-left: 2%;
   }
+}
 
-  .lang {
-    text-align: right;
-    font-size: 13px;
+@media (min-width: 1050px) {
+  .github-fork-ribbon-wrapper {
+    display: block;
   }
 }
 

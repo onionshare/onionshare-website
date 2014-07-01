@@ -21,6 +21,7 @@
     "tails": "To install in your Tails persistent volume, follow <a href=\"https://github.com/micahflee/onionshare/blob/master/tails/README.md\">these instructions</a>.",
     "mirror": "Mirror",
     "linux": "Desktop Linux",
+    "fork-github": "Fork me on GitHub",
     "news-reports": [
         {
             "url": "http://www.wired.com/2014/05/onionshare/",

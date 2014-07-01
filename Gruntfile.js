@@ -42,7 +42,8 @@ module.exports = function(grunt) {
         files: {
           'dist/assets/css/pack-<%= pkg.version %>.css': [
             'assets/css/normalize.css',
-            'assets/css/style.css'
+            'assets/css/style.css',
+            'assets/css/gh-fork-ribbon.css',
           ]
         }
       }
