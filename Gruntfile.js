@@ -13,7 +13,8 @@ module.exports = function(grunt) {
         files: [
           { dest: 'dist/', src: ['.htaccess', 'favicon.ico', 'signing-key.asc'] },
           { dest: 'dist/', src: 'assets/fonts/**' },
-          { dest: 'dist/', src: 'assets/img/**' }
+          { dest: 'dist/', src: 'assets/img/**' },
+          { dest: 'dist/', src: 'locales/*.json' }
         ]
       }
     },
@@ -60,7 +61,8 @@ module.exports = function(grunt) {
         files: {
           'dist/assets/js/pack-<%= pkg.version %>.js': [
             'assets/js/jquery-1.11.1.min.js',
-            'assets/js/verify.js'
+            'assets/js/l10n.js',
+            'assets/js/main.js'
           ]
         }
       }
@@ -83,7 +85,7 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      files: ['assets/**/*', 'index.html', 'Gruntfile.js'],
+      files: ['assets/**/*', 'index.html', 'locales/*.json', 'Gruntfile.js'],
       tasks: 'build'
     },
 
@@ -110,8 +112,13 @@ module.exports = function(grunt) {
 
     clean: {
       dist: 'dist/'
-    }
+    },
 
+    'json-minify': {
+      build: {
+        files: 'dist/locales/*.json'
+      }
+    }
   });
 
   // Load any grunt plugins found in package.json.
@@ -122,6 +129,7 @@ module.exports = function(grunt) {
     'clean',
     'copy',
     'includereplace',
+    'json-minify',
     'cssmin',
     'uglify',
     'htmlmin'
