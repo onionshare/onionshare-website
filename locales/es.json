@@ -13,6 +13,7 @@
     "verify-desc2": "Para estar completamente seguros de que la descarga no se ha alterado, puede verificar la firma criptográfica PGP del archivo que ha descargado.",
     "verify-desc3": "Todos los comunicados de OnionShare son firmados digitalmente por esta firma <a href=\"/signing-key.asc\">PGP</a> con la huella digital: 0B14 9192 9806 5962 5470 0155 FD72 0AD9 EBA3 4B1C.",
     "verify-desc4": "Las instrucciones detalladas sobre la forma de verificar la autenticidad de sus descargas para todos los sistemas operativos son muy pronto.",
+    "disclaimer": "Al igual que todo el software, OnionShare puede contener errores o vulnerabilidades. Debido a que todavía está en las primeras etapas de desarrollo, se recomienda precaución antes de usar OnionShare en entornos de alto riesgo. En última instancia, todo el mundo utiliza OnionShare bajo su propio riesgo.",
     "footer": "OnionShare fue desarrollado por <a href=\"https://twitter.com/micahflee\">Micah Lee</a> y es de código abierto, liberado bajo la licencia GPLv3. Usted puede encontrar el código de este sitio web <a href=\"https://github.com/micahflee/onionshare-website\">en GitHub</a> también.",
     "slogan": "<strong>OnionShare</strong> is una herramienta de código abierto que te permite de forma segura y anónima, comparte un archivo de cualquier tamaño. Lea más acerca de cómo funciona y cómo usarlo en <a href=\"https://github.com/micahflee/onionshare/blob/master/README.md\">GitHub</a>.",
     "bugs": "Cómo informar de fallos",
