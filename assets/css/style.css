@@ -32,6 +32,10 @@ a#mirror{
   font-size: 12px;
 }
 
+pre {
+  font-size: 14px;
+}
+
 #wrapper {
   padding: 20px;
   font-family: 'Roboto Slab';

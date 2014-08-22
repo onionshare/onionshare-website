@@ -20,7 +20,9 @@
     "bugs-desc": "Found a bug in OnionShare? Check the <a href=\"https://github.com/micahflee/onionshare/issues?state=open\">issues page</a> to see if it's already been reported, or <a href=\"https://github.com/micahflee/onionshare/issues/new\">open a new issue here</a>.",
     "tails": "To install in your Tails persistent volume, follow <a href=\"https://github.com/micahflee/onionshare/blob/master/tails/README.md\">these instructions</a>.",
     "mirror": "Mirror",
-    "linux": "Desktop Linux",
+    "ubuntu-instructions": "If you are using Ubuntu, open a terminal and type:",
+    "linux": "Other Linux",
+    "linux-instructions": "If you are using a different version of Linux, follow <a href=\"https://github.com/micahflee/onionshare/blob/master/BUILD.md#gnulinux\">these build instructions</a> to install.",
     "fork-github": "Fork me on GitHub",
     "news-reports": [
         {
