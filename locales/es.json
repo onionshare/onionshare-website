@@ -7,6 +7,7 @@
     "for-redhat": "OnionShare para Red Hat, Fedora, etc.",
     "verify": "Verifique su Descarga",
     "hide": "Ocultar.",
+    "ubuntu-instructions": "Si está utilizando Ubuntu, abre un terminal y escriba:",
     "read-more": "Leer más.",
     "news": "En las Noticias.",
     "verify-desc1": "Al descargar OnionShare de este sitio web que está descargando a través de HTTPS, pero todavía es posible que un atacante con acceso a una autoridad de certificación de confianza del navegador (por ejemplo, un gobierno) podría realizar un ataque man-in-the-middle en contra de usted, intercambiando el archivo que pensabas que descargó con malware.",
