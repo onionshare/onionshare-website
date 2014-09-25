@@ -1,4 +1,4 @@
-var languages = ['en', 'ru', 'es'];
+var languages = ['en', 'ru', 'es', 'de'];
 
 $(function(){
   localizeAll(localStorage.getItem('lang'));

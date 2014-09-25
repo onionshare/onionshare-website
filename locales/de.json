@@ -1,0 +1,47 @@
+{
+    "download": "Downloade OnionShare",
+    "for-windows": "OnionShare für Windows",
+    "pgp-sig": "PGP Signatur",
+    "for-macosx": "OnionShare für Mac OS X",
+    "for-debian": "OnionShare für Debian, Ubuntu, etc.",
+    "for-redhat": "OnionShare für Red Hat, Fedora, etc.",
+    "verify": "Verifiziere deinen Download",
+    "hide": "Ausblenden.",
+    "read-more": "Lese mehr.",
+    "news": "In den Nachrichten",
+    "verify-desc1": "Wenn du OnionShare über dieses Seite herunterlädst, dann lädst du über HTTPS, aber es immer noch möglich das ein Angreifer mit Zugang zu Browser-Trusted Zertifikaten (zum Beispiel eine Regierung) eine Man-in-the-Middle Attacke gegen dich durchführt und die Datei die du herunterlädst gegen Malware austauscht.",    
+    "verify-desc2": "Um wirklich sicher zu gehen das niemand den Download verändert hat, kannst du die krytpografische PGP-Signatur der Datei die du heruntergeladen hast überprüfen.",    
+    "verify-desc3": "Alle OnionShare Releases sind digital signiert durch <a href=\"/signing-key.asc\">diesen PGP-Schlüssel</a> mit Fingerabdruck: 0B14 9192 9806 5962 5470 0155 FD72 0AD9 EBA3 4B1C.",
+    "verify-desc4": "Detailierte Anleitungen wie du die Authentizität des Downloads für alle Betriebsysteme überprüfen kannst, folgen noch.",    
+    "disclaimer": "So wie jede Software, kann OnionShare Fehler oder Sicherheitslücken beinhalten. Da es sich momentan noch in den Anfangsstadien der Entwicklung befindet, ist Vorsicht geboten vor dem Einsatz in Hochrisiko-Umgebungen. Letzendlich benutzt jeder OnionShare auf eigene Gefahr.",
+    "footer": "OnionShare wird entwickelt durch <a href=\"https://twitter.com/micahflee\">Micah Lee</a> und ist OpenSource, veröffentlicht durch die GPLv3. Du kannst den Code dieser Webseite auch <a href=\"https://github.com/micahflee/onionshare-website\">auf GitHub</a> finden.",
+    "slogan": "<strong>OnionShare</strong> ist ein OpenSource Tool das dich sicher und anonym Dateien jeder Größe teilen lässt. Lese mehr darüber wie es funktioniert und wie man es verwendet auf der <a href=\"https://github.com/micahflee/onionshare/blob/master/README.md\">GitHub-Seite</a>.",    
+    "bugs": "Fehler melden",
+    "bugs-desc": "Du hast einen Fehler in OnionShare gefunden? Prüfe die <a href=\"https://github.com/micahflee/onionshare/issues?state=open\">Issues-Seite</a> ob er bereits gemeldet wurde oder <a href=\"https://github.com/micahflee/onionshare/issues/new\">erstelle ein neues Issue hier</a>.",    
+    "tails": "Um es in deinem Tails persistenten Volumen zu installieren, folge <a href=\"https://github.com/micahflee/onionshare/blob/master/tails/README.md\">dieser Anleitung</a>.",
+    "mirror": "Spiegel",
+    "ubuntu-instructions": "Wenn du Ubuntu verwendest, öffne einen Terminal und tippe:",
+    "linux": "Anderes Linux",
+    "linux-instructions": "Wenn du einen andere von Linux verwendest, dann folge <a href=\"https://github.com/micahflee/onionshare/blob/master/BUILD.md#gnulinux\">these build instructions</a> to install.",
+    "fork-github": "Forke mich auf GitHub",
+    "news-reports": [
+        {
+            "url": "http://www.wired.com/2014/05/onionshare/",
+            "title": "Free App Lets the Next Snowden Send Big Files Securely and Anonymously",
+            "img": "wired.png",
+            "alt": "Wired"
+        },
+        {
+            "url": "http://www.wired.com/2014/06/the-troubling-truth-of-why-its-still-so-hard-to-share-files-directly/",
+            "title": "The Troubling Truth of Why It's Still So Hard to Share Files Directly",
+            "img": "wired.png",
+            "alt": "Wired"
+        },
+        {
+            "url": "http://gizmodo.com/meet-onionshare-the-file-sharing-app-the-next-snowden-1597056567",
+            "title": "Meet Onionshare, the File Sharing App the Next Snowden Will Use",
+            "img": "gizmodo.png",
+            "alt": "Gizmodo"
+        }
+    ]
+}
