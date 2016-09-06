@@ -36,6 +36,12 @@ pre {
   font-size: 14px;
 }
 
+.verifying-signatures {
+  font-size: 0.9em;
+  color: #333333;
+  margin-top: 4em;
+}
+
 #wrapper {
   padding: 20px;
   font-family: 'Roboto Slab';
@@ -62,16 +68,6 @@ pre {
   font-size: 22px;
   color: #4c4c4c;
   font-family: serif;
-}
-
-#verify-more-link {
-  cursor: pointer;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 2px 4px;
-  font-size: 12px;
-  border-radius: 3px;
-  display: inline-block;
 }
 
 #news {
@@ -165,4 +161,3 @@ pre {
     display: block;
   }
 }
-
