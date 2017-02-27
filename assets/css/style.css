@@ -91,6 +91,15 @@ pre {
   color: #666666;
   font-size: 12px;
 }
+#footer .onion-service {
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
+}
+#footer .onion-service img {
+  vertical-align: bottom;
+  margin-right: 10px;
+}
 
 .clear {
   clear: both;
