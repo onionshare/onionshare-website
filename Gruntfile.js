@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: [
-          { dest: 'dist/', src: ['.htaccess', 'favicon.ico', 'signing-key.asc'] },
+          { dest: 'dist/', src: ['.htaccess', 'favicon.ico', 'signing-key.asc', 'latest-version.txt'] },
           { dest: 'dist/', src: 'assets/fonts/**' },
           { dest: 'dist/', src: 'assets/img/**' },
           { dest: 'dist/', src: 'locales/*.json' }
