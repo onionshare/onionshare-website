@@ -298,6 +298,8 @@ article a {
 article img {
   margin-bottom: 48px;
   margin-bottom: 3rem;
+  height: 20px;
+  height: 1.25rem;
 }
 
 article p, q {
