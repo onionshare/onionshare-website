@@ -117,11 +117,14 @@ h3 {
 
 /*BEGIN HEADER*/
 
+header {
+	background-color: rgba(246, 246, 246, 1);
+}
+
 header nav {
   font-size: 13.2px;
   font-size: .825rem;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: inherit;
   margin-right: 24px;
   margin-right: 1.5rem;
@@ -139,7 +142,7 @@ nav ul li {
 /*BEGIN INTRO*/
 
 #intro-wrapper {
-  height: 93vh;
+  height: 80vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(246, 246, 246, 1);
   overflow: hidden;
@@ -147,7 +150,7 @@ nav ul li {
 
 #intro {
   position: relative;
-  top: 10%;
+  top: 16%;
   text-align: center;
   padding: 0 32px;
   padding: 0 2rem;
@@ -410,7 +413,7 @@ a.onion-address {
   }
 
   #intro-wrapper {
-    height: 94vh;
+    height: 80vh;
   }
 }
   
