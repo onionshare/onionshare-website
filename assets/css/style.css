@@ -95,6 +95,11 @@ pre {
   font-weight: bold;
   color: #333333;
   font-size: 14px;
+  word-wrap: break-word;
+  background-image: url('/assets/img/tor.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
 }
 #footer .onion-service .onion-next-gen {
     font-weight: normal;
