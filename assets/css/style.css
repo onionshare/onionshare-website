@@ -28,7 +28,14 @@
     height: 0;
 }
 
-body {}
+::selection {
+  background-color: rgba(78, 13, 78, 1);
+  color: #fff;
+}
+
+body {
+
+}
 
 html {
     font-family: 'Roboto Slab';
@@ -181,7 +188,7 @@ header ul li {
 }
 
 #downloads .osPrimary .title {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #downloads p.code {
@@ -270,6 +277,17 @@ footer ul li {
 
 footer .wrapper {
     padding: 0;
+}
+
+footer .onionAddress {
+  margin: 0;
+}
+
+footer img {
+  float: left;
+  margin-right: .5rem;
+  position: relative;
+  top: 5px;
 }
 
 @media only screen and (max-width: 960px) {
