@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>OnionShare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="description" content="OnionShare lets you securely and anonymously share a file of any size.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="OnionShare">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/img/logo.png">
@@ -17,118 +19,103 @@
     <meta property="og:image:height" content="300">
     <meta property="og:url" content="https://onionshare.org">
     <meta property="og:description" content="OnionShare lets you securely and anonymously share a file of any size.">
-    <link rel="localization" hreflang="en" href="locales/en.json" type="application/vnd.oftn.l10n+json"/>
-    <link rel="localization" hreflang="ru" href="locales/ru.json" type="application/vnd.oftn.l10n+json"/>
-    <link rel="localization" hreflang="es" href="locales/es.json" type="application/vnd.oftn.l10n+json"/>
-    <link rel="localization" hreflang="de" href="locales/de.json" type="application/vnd.oftn.l10n+json"/>
+    <link rel="localization" hreflang="en" href="locales/en.json" type="application/vnd.oftn.l10n+json" />
+    <link rel="localization" hreflang="ru" href="locales/ru.json" type="application/vnd.oftn.l10n+json" />
+    <link rel="localization" hreflang="es" href="locales/es.json" type="application/vnd.oftn.l10n+json" />
+    <link rel="localization" hreflang="de" href="locales/de.json" type="application/vnd.oftn.l10n+json" />
     <script src="/assets/js/pack-@@version.js"></script>
-  </head>
+</head>
 
-  <body>
-
+<body>
+    <header>
+        <nav class="clearfix">
+            <ul>
+                <li><a href="https://github.com/micahflee/onionshare/issues?state=open" target="_blank" data-l10n="bugs">Report an Issue</a></li>
+                <li><a href="https://github.com/micahflee/onionshare" target="_blank" data-l10n="fork-github">Fork me on GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="intro">
-      <div id="wrapper">
-        <img src="assets/img/logo.png" title="OnionShare" />
-        <h1>OnionShare</h1>
-        <p class="secondary">v1.2</p>
-        <p data-l10n="slogan">OnionShare is an open source tool that lets you securely and anonymously share a file of any size. Learn how it works and how to use it on the <a href="https://github.com/micahflee/onionshare/wiki" target="_blank">wiki</a>.</p>
-        <div class="clear"></div>
-      </div>
+        <div class="wrapper">
+            <img src="assets/img/logo.png" title="OnionShare">
+            <h1>OnionShare</h1>
+            <p class="secondary">v1.2</p>
+            <p data-l10n="slogan">OnionShare is an open source tool that lets you securely and anonymously share a file of any size.</p>
+
+            <a class="buttonPrimary" href="#downloads" data-l10n="download">Download</a>
+
+              <a class="button" href="https://github.com/micahflee/onionshare/wiki" target="_blank" class="buttonSecondary" data-l10n="learn-more">Learn More</a>
+        </div>
     </div>
-
-    <div id="wrapper">
-      <div id="content">
-        <div id="download">
-          <h2><span data-l10n="download">Download OnionShare</span> 1.2</h2>
-          <p>
-            <strong>Windows</strong><br/>
-            <a href="https://github.com/micahflee/onionshare/releases/download/v1.2/onionshare-setup.exe" data-l10n="for-windows">OnionShare for Windows</a>
-          </p>
-          <p>
-            <strong>Mac OS X</strong><br/>
-            <a href="https://github.com/micahflee/onionshare/releases/download/v1.2/OnionShare.pkg" data-l10n="for-macosx">OnionShare for Mac OS X</a>
-          </p>
-          <p>
-            <strong>Ubuntu</strong><br/>
-            <span data-l10n="ubuntu-instructions">If you are using Ubuntu, open a terminal and type:</span>
-<pre>
-sudo add-apt-repository ppa:micahflee/ppa
-sudo apt-get update
-sudo apt-get install onionshare
-</pre>
-          </p>
-          <p>
-            <strong>Fedora</strong><br/>
-            <span data-l10n="fedora-instructions">If you are using Fedora, install it from Software or open a terminal and type:</span>
-<pre>
-sudo dnf install onionshare
-</pre>
-          </p>
-          <p>
-            <strong data-l10n="linux">Other Linux</strong><br/>
-            <span data="linux-instructions">If you are using a different version of Linux, follow <a href="https://github.com/micahflee/onionshare/blob/master/BUILD.md#gnulinux">these build instructions</a> to install.</span>
-          </p>
+    <section id="downloads" class="wrapper clearfix">
+        <h2 data-l10n="download">Download</h2>
+        <div class="clearfix">
+            <div class="osPrimary">
+                <img src="assets/img/apple-logo.png" alt="Apple Logo">
+                <p class="title">MacOS</p>
+                <a class="button" href="https://github.com/micahflee/onionshare/releases/download/v1.2/OnionShare.pkg" data-l10n="for-macosx">Download for MacOS</a>
+            </div>
+            <div class="osPrimary">
+                <img src="assets/img/windows-logo.png" alt="Windows Logo">
+                <p class="title">Windows</p>
+                <a class="button" href="https://github.com/micahflee/onionshare/releases/download/v1.2/onionshare-setup.exe" data-l10n="for-windows">Download for Windows</a>
+            </div>
         </div>
-      </div>
-
-      <div id="sidebar">
-        <div id="news">
-          <h2 data-l10n="news">In the News</h2>
-          <ul>
-            <li>
-              <a href="http://www.wired.com/2014/05/onionshare/">
-                <img src="/assets/img/wired.png" alt="Wired" width="100" height="20">
-                <br/>
-                Free App Lets the Next Snowden Send Big Files Securely and Anonymously
-              </a>
-            </li>
-            <li>
-              <a href="http://www.wired.com/2014/06/the-troubling-truth-of-why-its-still-so-hard-to-share-files-directly/">
-                <img src="/assets/img/wired.png" alt="Wired" width="100" height="20">
-                <br/>
-                The Troubling Truth of Why It's Still So Hard to Share Files Directly
-              </a>
-            </li>
-            <li>
-              <a href="http://gizmodo.com/meet-onionshare-the-file-sharing-app-the-next-snowden-1597056567">
-                <img src="/assets/img/gizmodo.png" alt="Gizmodo" width="141" height="20">
-                <br/>
-                Meet Onionshare, the File Sharing App the Next Snowden Will Use
-              </a>
-            </li>
-          </ul>
+        <div class="clearfix">
+            <div class="osSecondary">
+                <img src="assets/img/ubuntu-logo.png" alt="Ubuntu Logo">
+                <p class="title">Ubuntu</p>
+                <p data-l10n="ubuntu-instructions">If you are using Ubuntu, open a terminal and type:</p>
+                <p class="code">sudo add-apt-repository ppa:micahflee/ppa</p>
+                <p class="code">sudo apt-get update</p>
+                <p class="code">sudo apt-get install onionshare</p>
+            </div>
+            <div class="osSecondary">
+                <img src="assets/img/fedora-logo.png" alt="Fedora Logo">
+                <p class="title">Fedora</p>
+                <p data-l10n="fedora-instructions">If you are using Fedora, install it from Software or open a terminal and type:</p>
+                <p class="code">sudo dnf install onionshare</p>
+            </div>
+            <div class="osSecondary">
+                <img src="assets/img/linux-logo.png" alt="Linux Logo">
+                <p class="title">Other Linux</p>
+                <p data-l10n="linux-instructions">If you are using a different version of Linux, follow <a href="https://github.com/micahflee/onionshare/blob/master/BUILD.md#gnulinux">these build instructions</a> to install.</p>
+            </div>
         </div>
-
-        <div id="bugs">
-          <h2 data-l10n="bugs">Reporting Bugs</h2>
-          <p data-l10n="bugs-desc">Found a bug in OnionShare? Check the <a href="https://github.com/micahflee/onionshare/issues?state=open">issues page</a> to see if it's already been reported, or <a href="https://github.com/micahflee/onionshare/issues/new">open a new issue here</a>.</p>
+    </section>
+    <section class="wrapper" id="news">
+        <h2 data-l10n="news">In the News</h2>
+        <div class="snippet">
+            <p>&quot;When Glenn Greenwald discovered last year that some of the NSA documents he'd received from Edward Snowden had been corrupted, he needed to retrieve copies from fellow journalist Laura Poitras in Berlin. They decided the safest way to transfer the sizable cache was to use a USB drive carried by hand to Greenwald's home in Brazil. As a result, Greenwald’s partner David Miranda was detained at Heathrow, searched, and questioned for nine hours.</p>
+            <p>That's exactly the sort of ordeal Micah Lee, the staff technologist and resident crypto expert at Greenwald’s investigative news site The Intercept, hopes to render obsolete.&quot;</p>
+            <a href="http://www.wired.com/2014/05/onionshare/" target="_blank">Free App Lets the Next Snowden Send Big Files Securely and Anonymously</a>
+            <img src="assets/img/wired.png" alt="Wired">
         </div>
-      </div>
-
-      <div class="clear"></div>
-
-      <div id="footer">
-        <p data-l10n="disclaimer">
-          OnionShare was developed by <a href="https://twitter.com/micahflee">Micah Lee</a> and is open source, released under the GPLv3.<br/>
-          Like all software, OnionShare may contain bugs or vulnerabilities.
-        </p>
-        <p data-l10n="onion-service" class="onion-service">
-          http://elx57ue5uyfplgva.onion/<br/>
-          http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ <span class="onion-next-gen">(requires Tor Browser 7.5+)</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="github-fork-ribbon-wrapper right-bottom">
-      <div class="github-fork-ribbon">
-        <a href="https://github.com/micahflee/onionshare" data-l10n="fork-github">Fork me on GitHub</a>
-        <div class="lang">
-          <a id="en" href="#">English</a>
-          <a id="ru" href="#">Русский</a>
-          <a id="es" href="#">Español</a>
-          <a id="de" href="#">Deutsch</a>
+        <div class="snippet">
+            <p>&quot;It's a great new software solution to a thorny problem...&quot;</p>
+            <a href="http://www.wired.com/2014/06/the-troubling-truth-of-why-its-still-so-hard-to-share-files-directly/" target="_blank">The Troubling Truth of Why It's Still So Hard to Share Files Directly</a>
+            <img src="assets/img/wired.png" alt="Wired">
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="snippet">
+            <p>&quot;Onionshare lets users share files securely and anonymously, without middlemen.&quot;</p>
+            <a href="https://gizmodo.com/meet-onionshare-the-file-sharing-app-the-next-snowden-1597056567" target="_blank">Meet Onionshare, the File Sharing App the Next Snowden Will Use</a>
+            <img src="assets/img/gizmodo.png" alt="Gizmodo">
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <p data-l10n="disclaimer">OnionShare was developed by <a href="https://twitter.com/micahflee">Micah Lee</a> and is open source, released under the GPLv3.</p>
+            <p>Like all software, OnionShare may contain bugs or vulnerabilities.</p>
+            <p data-l10n="onion-service" class="onion-service">http://elx57ue5uyfplgva.onion/</p>
+            <p data-l10n="onion-service" class="onion-service">http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ <span class="onion-next-gen">&#40;Requires Tor Browser 7.5+&#41;</span></p>
+            <ul class="lang">
+                <li><a id="en" href="#">English</a></li>
+                <li><a id="ru" href="#">Русский</a></li>
+                <li><a id="es" href="#">Español</a></li>
+                <li><a id="de" href="#">Deutsch</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>
