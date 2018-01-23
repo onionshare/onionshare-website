@@ -12,7 +12,21 @@
 }
 
 body{
-  background-color: #eee;
+}
+
+html {
+  font-family: 'Roboto Slab';
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 a:link, a:visited {
@@ -43,31 +57,27 @@ pre {
 }
 
 #wrapper {
-  padding: 20px;
-  font-family: 'Roboto Slab';
+  width: 906px;
+  margin: 0 auto;
 }
 
-#header-wrapper {
-  background-color: #ffffff;
-  border-bottom: 1px solid #999;
-}
-#header {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-#header #logo {
+/*INTRO*/
+
+#intro {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
+  padding: 6rem 0;
 }
-#header #logo img {
-  width: 70%;
-  max-width: 300px;
+
+#intro img {
+  width: 8rem;
+  margin-bottom: 1rem;
 }
-#header #slogan {
-  margin-top: 20px;
-  font-size: 22px;
-  color: #4c4c4c;
-  font-family: serif;
+
+#intro .secondary {
+  font-size: .875rem;
+  margin-bottom: 1rem;
 }
 
 #news {
