@@ -329,12 +329,12 @@ AddDefaultCharset utf-8
 # http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx
 # https://www.owasp.org/index.php/Clickjacking
 
-# <IfModule mod_headers.c>
-#     Header set X-Frame-Options "DENY"
-#     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
-#         Header unset X-Frame-Options
-#     </FilesMatch>
-# </IfModule>
+<IfModule mod_headers.c>
+     Header set X-Frame-Options "DENY"
+     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+         Header unset X-Frame-Options
+     </FilesMatch>
+</IfModule>
 
 # ------------------------------------------------------------------------------
 # | Content Security Policy (CSP)                                              |
@@ -354,12 +354,12 @@ AddDefaultCharset utf-8
 # the specification: http://www.w3.org/TR/CSP11/). Also, to make things easier,
 # you can use an online CSP header generator such as: http://cspisawesome.com/.
 
-# <IfModule mod_headers.c>
-#     Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
-#     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
-#         Header unset Content-Security-Policy
-#     </FilesMatch>
-# </IfModule>
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self';"
+    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+        Header unset Content-Security-Policy
+    </FilesMatch>
+</IfModule>
 
 # ------------------------------------------------------------------------------
 # | File access                                                                |
@@ -449,6 +449,27 @@ AddDefaultCharset utf-8
     Header set X-Content-Type-Options "nosniff"
 </IfModule>
 
+
+# ------------------------------------------------------------------------------
+# | Set Referrer-Policy                                                        |
+# ------------------------------------------------------------------------------
+
+# https://scotthelme.co.uk/a-new-security-header-referrer-policy/
+
+<IfModule mod_headers.c>
+    Header set Referrer-Policy "no-referrer"
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | Set Feature-Policy                                                         |
+# ------------------------------------------------------------------------------
+
+# https://scotthelme.co.uk/a-new-security-header-feature-policy/
+
+<IfModule mod_headers.c>
+	Header set Feature-Policy: "geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'"
+</IfModule>
+
 # ------------------------------------------------------------------------------
 # | Reflected Cross-Site Scripting (XSS) attacks                               |
 # ------------------------------------------------------------------------------
@@ -483,13 +504,13 @@ AddDefaultCharset utf-8
 # http://blogs.msdn.com/b/ieinternals/archive/2011/01/31/controlling-the-internet-explorer-xss-filter-with-the-x-xss-protection-http-header.aspx
 # https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
 
-# <IfModule mod_headers.c>
-#     #                           (1)    (2)
-#     Header set X-XSS-Protection "1; mode=block"
-#     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
-#         Header unset X-XSS-Protection
-#     </FilesMatch>
-# </IfModule>
+<IfModule mod_headers.c>
+     #                           (1)    (2)
+     Header set X-XSS-Protection "1; mode=block"
+     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+         Header unset X-XSS-Protection
+     </FilesMatch>
+ </IfModule>
 
 # ------------------------------------------------------------------------------
 # | Secure Sockets Layer (SSL)                                                 |
@@ -524,9 +545,9 @@ AddDefaultCharset utf-8
 # IMPORTANT: Remove the `includeSubDomains` optional directive if the subdomains
 # are not using HTTPS.
 
-# <IfModule mod_headers.c>
-#     Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
-# </IfModule>
+<IfModule mod_headers.c>
+     Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+</IfModule>
 
 # ------------------------------------------------------------------------------
 # | Server software information                                                |
