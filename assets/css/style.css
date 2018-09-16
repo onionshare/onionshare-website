@@ -283,15 +283,13 @@ footer .wrapper {
     padding: 0;
 }
 
-footer .onionAddress {
-    margin: 0;
+footer .onion {
+  color: #333333;
 }
 
-footer img {
-    float: left;
-    margin-right: .5rem;
-    position: relative;
-    top: 5px;
+footer .onion img {
+  vertical-align: middle;
+  margin-right: .5rem;
 }
 
 @media only screen and (max-width: 960px) {
@@ -319,11 +317,11 @@ footer img {
 }
 
 @media only screen and (max-width: 480px) {
-      
+
     h1 {
       font-size: 2.75rem;
       line-height: 3rem;
-    }  
+    }
 
     .wrapper {
         padding: 3rem 2rem;
