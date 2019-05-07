@@ -204,6 +204,13 @@ header ul li {
     margin-bottom: 0;
 }
 
+.sig {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .5rem;
+}
 
 
 /*NEWS*/
