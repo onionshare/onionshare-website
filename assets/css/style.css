@@ -101,25 +101,6 @@ a {
 }
 
 
-
-/*HEADER*/
-
-header {
-    padding: 1.5rem 1rem;
-    position: absolute;
-    right: 0;
-}
-
-header nav {
-    float: right;
-    font-size: .75rem;
-}
-
-header ul li {
-    display: inline;
-    margin: 0 0 0 .5rem;
-}
-
 /*INTRO*/
 
 #intro {
@@ -167,17 +148,10 @@ header ul li {
     margin-bottom: 2rem;
 }
 
-.osPrimary {
-    width: 50%;
+.platform {
+    width: 33%;
     float: left;
     padding: 3rem 3rem 4rem 3rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.osSecondary {
-    width: 33.3%;
-    float: left;
-    padding: 3rem 3rem 0 3rem;
 }
 
 #downloads p {
@@ -306,20 +280,9 @@ footer .onion img {
 }
 
 @media only screen and (max-width: 768px) {
-    .osPrimary,
-    .osSecondary {
+    .platform {
         width: 100%;
         float: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .osSecondary:last-of-type {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
-    .osSecondary {
-        padding: 3rem;
     }
 }
 
