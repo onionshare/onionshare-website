@@ -1,0 +1,105 @@
+@media (prefers-color-scheme: light) {
+  .tabs {
+    border-bottom: var(--border-lm);
+  }
+
+  .tabs a:hover {
+    border-bottom: 3px solid var(--color-dark);
+    background-color: var(--color-shade);
+  }
+
+  .tabs a.selected {
+    border-bottom: 3px solid var(--color-dark) !important;
+  }
+
+  .tabContainerScrolled {
+    background-color: var(--color-light);
+  }
+
+  .tabs .badge {
+    background-color: #B6585C;
+    color: var(--color-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .tabs {
+    border-bottom: var(--border-dm);
+  }
+
+  .tabs a:hover {
+    border-bottom: 3px solid var(--color-light);
+    background-color: var(--color-dark-1);
+  }
+
+  .tabs a.selected {
+    border-bottom: 3px solid var(--color-light)  !important;
+  }
+
+  .tabContainerScrolled {
+    background-color: var(--color-dark);
+  }
+}
+
+.tabs.wrapper {
+  width: 100%;
+  z-index: 1;
+}
+
+.tabs h2 {
+  font-size: var(--font-size-body);
+  line-height: 0;
+  display: inline;
+  margin: 0 var(--spacing-medium) 0 0;
+}
+
+.tabs {
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: calc(var(--spacing-xxlarge) * 2);
+}
+
+.tabs a {
+  display: inline-block;
+  padding: var(--spacing-base) var(--spacing-base) calc(var(--spacing-base) - 3px) var(--spacing-base);
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  border-bottom: 3px solid rgba(0,0,0,0);
+  cursor: pointer;
+  border-radius: 2px 2px 0 0;
+}
+
+.tabs a.selected {
+  font-weight: bold;
+}
+
+.tabContainerScrolled {
+  position: fixed;
+  top: 87px;
+  width: 100%;
+  z-index: 3;
+  padding-top: 0;
+}
+
+.tabs .badge {
+  display: initial;
+  margin-left: var(--spacing-xsmall) !important;
+  padding: calc(var(--spacing-xxsmall) * .65) calc(var(--spacing-small) * .65);
+  line-height: inherit;
+}
+
+@media only screen and (max-width: 960px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .tabContainerScrolled {
+    top: 70px;
+  }
+
+  .chatTabs {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+}

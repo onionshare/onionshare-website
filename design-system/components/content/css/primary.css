@@ -1,0 +1,34 @@
+.blockContent {
+  display: block !important;
+  text-align: center;
+}
+
+.blockContent .featureImage {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.blockContent .description {
+  margin: 0 auto var(--spacing-large) auto;
+  padding-right: 0;
+  width: 100%;
+}
+
+.blockContent .description p {
+  margin: 0 auto var(--spacing-base) auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .blockContent .description p {
+    margin: 0 0 var(--spacing-base) 0;
+  }
+
+  .blockContent .featureImage {
+    width: 100%;
+  }
+
+  .blockContent {
+    text-align: left;
+  }
+}

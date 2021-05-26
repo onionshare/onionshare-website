@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: light) {
+  .badge {
+    background-color: var(--badge-lm);
+    border: var(--border-lm);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge {
+    background-color: var(--badge-dm);
+    border: var(--border-dm);
+  }
+}
+
+.badgeContainer {
+  margin-bottom: var(--spacing-base);
+}
+
+.badgeContainer p.badge {
+  margin-bottom: var(--spacing-xxsmall) !important;
+}
+
+p.badge {
+  border-radius: 50vh;
+  font-size: var(--font-size-xxsmall) !important;
+  display: inline-block;
+  margin: 0 !important;
+  font-weight: bold;
+  padding: calc(var(--spacing-xxsmall) + 1px) var(--spacing-small) var(--spacing-xxsmall) var(--spacing-small);
+  width: auto !important;
+}
+
+p.badge:last-of-type {
+  margin-right: 0 !important;
+}

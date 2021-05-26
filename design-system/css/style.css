@@ -1,0 +1,56 @@
+@import url("reset.css");
+@import url("variables.css");
+@import url("themes.css");
+@import url("animation.css");
+@import url("icons.css");
+@import url("typography.css");
+
+/* INPUTS */
+
+@import url("../components/inputs/css/inputs.css");
+
+/* ARTICLE */
+
+@import url("../components/article/css/article.css");
+
+/* INTRO  */
+
+@import url("../components/intro/css/intro.css");
+@import url("../components/hint/css/hint.css");
+
+/* COMPONENTS  */
+
+@import url("../components/tabs/css/tabs.css");
+@import url("../components/filters/css/filters.css");
+@import url("../components/about/css/about.css");
+@import url("../components/buttons/css/links-buttons.css");
+@import url("../components/badge/css/badge.css");
+@import url("../components/notification/css/notification.css");
+@import url("../components/header/css/header.css");
+@import url("../components/footer/css/footer.css");
+@import url("../components/article/css/article.css");
+@import url("../components/statement/css/statement.css");
+@import url("../components/pinned-list/css/pinned-list.css");
+
+/* LISTS */
+
+@import url("../components/content/css/content.css");
+@import url("../components/content/css/tertiary.css");
+@import url("../components/content/css/primary.css");
+
+/* BASE */
+
+@import url("base.css");
+@import url("firefox.css");
+
+/* TABLE  */
+
+@import url("../components/table/css/table.css");
+
+/* CHAT  */
+
+@import url("../components/chat/css/chat.css");
+
+/* BUILDER  */
+
+@import url("../builder/css/builder.css");

@@ -1,0 +1,60 @@
+<header>
+
+  <!--
+  == Open menu button ==
+  - Hidden on medium–large devices
+  - Covered when menu is open on small devices
+  - When clicked, focuses on #main-menu <nav>
+  -->
+  <a href="#main-menu"
+     id="main-menu-toggle"
+     class="menu-toggle"
+     aria-label="Open main menu">
+    <span class="sr-only">Open main menu</span>
+    <span role="button" class="navButton withUtil" tabindex="0" >
+      <div class="menu"></div>
+    </span>
+  </a>
+
+  <h1 class="logo">hamburgers</h1>
+
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    <!--
+    == Close menu button ==
+    - Hidden on medium–large devices
+    - Not shown when menu is closed on small devices
+    - When clicked, focuses on #main-menu <nav>
+    - First link in <nav> so DOM order makes sense in toggling open/closed
+    -->
+    <a href="#main-menu-toggle"
+       id="main-menu-close"
+       class="menu-close"
+       aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span role="button" class="navButton closeButton" tabindex="0" >
+				<div class="close"></div>
+			</span>
+    </a>
+    <!--
+    == Main menu heading ==
+    - Added June 23, 2020
+    - Adds heading for unordered list of links for better accessibility, using aria-labelledby
+    -->
+    <h2 id="main-menu-heading" class="sr-only">Main menu</h2>
+    <ul aria-labelledby="main-menu-heading">
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <!--
+  == Backdrop ==
+  - Hidden when menu is closed AND on medium–large devices
+  - Provides "click area" for clicking off the menu to hide
+  - Tabindex is -1 so that it can be clicked, but not focused on (for accessibility purposes)
+  -->
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+</header>

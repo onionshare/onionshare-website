@@ -1,0 +1,75 @@
+article h2 {
+  font-family: var(--font-serif)!important;
+  font-weight: bold !important;
+  margin-bottom: var(--spacing-large) !important;
+}
+
+article h3 {
+  font-family: var(--font-serif)!important;
+  font-weight: bold !important;
+  margin-bottom: var(--spacing-large) !important;
+}
+
+article h4 {
+  font-family: var(--font-serif);
+  font-weight: bold !important;
+  margin-bottom: var(--spacing-large) !important;
+}
+
+.authorName {
+  font-weight: bold;
+}
+
+article {
+  margin-bottom: var(--spacing-xxlarge);
+}
+
+article .featureImage {
+  float: right;
+  margin: 0 0 var(--spacing-medium) var(--spacing-medium);
+  width: 50% !important;
+}
+
+article a.location {
+  font-weight: bold;
+}
+
+article p {
+  margin-bottom: var(--spacing-medium);
+}
+
+article h2 {
+  margin-bottom: var(--spacing-base);
+}
+
+article h3 {
+  margin-bottom: var(--spacing-base);
+}
+
+article p + h3 {
+  margin-top: var(--spacing-xlarge);
+}
+
+article h4 {
+  margin: 0 0 var(--spacing-base) 0;
+}
+
+@media only screen and (max-width: 1280px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 640px) {
+
+  article p {
+    margin-bottom: var(--spacing-medium);
+  }
+
+  article .featureImage {
+    margin: 0 0 var(--spacing-medium) 0;
+    width: 100% !important;
+  }
+
+  article h2 {
+    margin-bottom: var(--spacing-medium);
+  }
+}

@@ -1,0 +1,201 @@
+/* Better box-model */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+  Screen reader only
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/*
+  ===================================================
+  Base styles for all devices sizes, but mobile first
+  ===================================================
+*/
+
+/*
+  Hamburger menu icon/'button' styling
+*/
+.menu-toggle {
+  display: inline-block;
+  /* padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em; */
+}
+
+/*
+  Offscreen menu styling
+  - Default styles + mobile first
+*/
+.main-menu {
+  position: absolute;
+  display: none;
+  left: -200px; /* push off the screen to the left for future animation */
+  top: 0;
+  height: 100%;
+	overflow-y: scroll;
+	overflow-x: visible;
+	transition: left 0.3s ease,
+				      box-shadow 0.3s ease;
+	z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  min-height: 100%;
+  width: 200px;
+  align-items: center;
+}
+
+/*
+  Generic style for ALL hamburger menu links
+*/
+.main-menu a {
+  display: block;
+}
+
+/*
+  Close button positioning
+  - Other styles come from `.main-menu a`
+*/
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+  =======================================
+  On small devices, allow it to toggle...
+  =======================================
+*/
+
+/*
+  Opening hamburger menu!
+  - Using `:target` for non-JavaScript
+  - `[aria-expanded]` will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  display: block;
+  left: 0; /* slide from -200px to the left edge at 0 */
+  outline: none;
+  /* fix box-shadow so it shows now */
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+/*
+  Close menu button
+  - Make sure it's on top!
+  - Basically, when `.main-menu` is the target of the click, get its child `.menu-close` link
+*/
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+/*
+  Hamburger menu list
+  - Make sure it's on top!
+  - Basically, when `.main-menu` is the target of the click, get its child `<ul>`
+*/
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/*
+  Backdrop
+  - Show backdrop
+  - Basically, when `.main-menu` is the target of the click, get its sibling `.backdrop`
+  - Note: we could use `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+/*
+  ======================================================
+  If CSS supports `fixed`, like all good modern browsers
+  ======================================================
+*/
+@supports (position: fixed) {
+  /*
+    Allow backdrop to stay fixed and not "scroll"
+  */
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+/*
+  ================================
+  Larger screen styling
+  ================================
+*/
+
+/*
+  Horizontal menu (i.e. no hamburger)
+*/
+@media only screen and (max-width: 768px) {
+  /* Hide hamburger menu/'button' */
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+		left: auto;
+		top: auto;
+		height: auto;
+    display: block;
+  }
+
+  .main-menu ul {
+    display: flex; /* allows for full height of menu */
+
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+  }
+
+  .main-menu a {
+    /* color: #06c; */
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+}

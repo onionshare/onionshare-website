@@ -1,0 +1,85 @@
+@media (prefers-color-scheme: light) {
+  .glow h1 {
+    background: rgb(218, 3, 253);
+    background: var(--gradient-lm);
+  }
+
+  .glow .headline p {
+    background: rgb(218, 3, 253);
+    background: var(--gradient-lm);
+  }
+
+  .glow input:focus {
+    border: 1px solid var(--theme-glow);
+    box-shadow: 0 0 var(--spacing-xsmall) var(--theme-glow-light);
+  }
+
+  .glow .btn {
+    color: var(--theme-glow);
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .glow h1 {
+    background: rgb(233, 98, 253);
+    background: var(--gradient-dm);
+  }
+
+  .glow .headline p {
+    background: rgb(233, 98, 253);
+    background: var(--gradient-dm);
+  }
+}
+
+.glow ::selection {
+  background-color: var(--theme-glow);
+  color: var(--color-light);
+}
+
+.glow .tabs a:hover {
+  border-bottom: 3px solid var(--theme-glow);
+}
+
+.glow .tabs a.selected {
+  border-bottom: 3px solid var(--theme-glow) !important;
+}
+
+.glow .highlight {
+  background-color: var(--theme-glow);
+  color: var(--color-light);
+}
+
+.glow .primaryBtn {
+  background-color: var(--theme-glow);
+  color: var(--font-color-light);
+}
+
+.glow .primaryBtn:hover {
+  background-color: #7B2AF4;
+}
+
+.glow h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow .headline p {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CHAT */
+
+.glow .outgoing p:first-of-type {
+  background-color: var(--theme-glow)!important;
+  color: var(--color-light);
+}
+
+.glow .outgoing a {
+  color: var(--color-light);
+}
+
+.glow .pinnedList .card.selected {
+  border-left: 3px solid var(--theme-glow)!important;
+}

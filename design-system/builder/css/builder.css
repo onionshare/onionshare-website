@@ -1,0 +1,227 @@
+@media (prefers-color-scheme: light) {
+  aside {
+    background-color: var(--color-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  aside {
+    background-color: var(--color-dark-1);
+  }
+}
+
+#builder * {
+  transition: none;
+}
+
+#builder .utilityIcon:hover {
+  transition: all 0.3s !important;
+}
+
+#builder {
+  margin: 0;
+  max-width: none;
+}
+
+.home-template, .secondary-template, .article-template, .table-template, .chat-template, .instructions {
+  margin-bottom: 0;
+}
+
+section.canvas {
+  margin-bottom: 0 !important;
+}
+
+.canvas {
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.canvas header {
+  right: 25%;
+}
+
+.canvas .chatHeader {
+  right: 25%;
+}
+
+.canvas .messageComposer {
+  right: 25%;
+}
+
+.canvas .chatWindow {
+  right: 25%;
+}
+
+.canvas .window {
+  right: 25%;
+}
+
+.canvas .emptyTable {
+  right: 25%;
+  top: 88px !important;
+}
+
+.chat {
+  margin-bottom: 0;
+}
+
+aside {
+  width: 25%;
+  padding: var(--spacing-medium);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-size: var(--font-size-small);
+  overflow-y: scroll;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+}
+
+aside .navButton {
+  top: var(--spacing-medium);
+}
+
+.wide {
+  width: 100% !important;
+  right: 0;
+}
+
+.edge {
+  right: 0 !important;
+}
+
+.canvas .pinnedList .window {
+  right: 70% !important;
+}
+
+.canvas .pinnedList .window.wide {
+  right: 100% !important;
+  width: inherit;
+}
+
+p.hint, .btn, .utilityIcon {
+  transition: all 0.3s !important;
+}
+
+/* HIDE SCROLLBARS */
+/* #builder::-webkit-scrollbar {
+ display: none;
+}
+
+#builder {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+aside::-webkit-scrollbar {
+ display: none;
+}
+
+aside {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+@media only screen and (max-width: 960px) {
+  .canvas header h1 {
+    float: none;
+    margin-top: 0;
+  }
+
+  .canvas header nav ul {
+    display: none;
+  }
+
+  .canvas nav.staged ul {
+    display: inherit;
+  }
+
+  .canvas .navButton, .close, .menu {
+    display: inherit !important;
+  }
+
+  .canvas .headline p:last-of-type {
+    margin-bottom: var(--spacing-base) !important;
+  }
+
+  .canvas .listUtilities {
+    top: 88px;
+  }
+
+  aside {
+    width: 33%;
+  }
+
+  .canvas {
+    width: 67%;
+  }
+
+  .canvas header {
+    right: 33%;
+  }
+
+  .canvas .window {
+    right: 33%;
+  }
+
+  .canvas .chatHeader {
+    right: 33%;
+  }
+
+  .canvas .messageComposer {
+    right: 33%;
+  }
+
+  .canvas .chatWindow {
+    right: 33%;
+  }
+
+  .canvas .window {
+    right: 33%;
+  }
+
+  .canvas .emptyTable {
+    right: 33%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .canvas {
+    width: 100%;
+  }
+
+  .canvas header {
+    width: 100%;
+  }
+
+  .canvas .window {
+    right: 0;
+  }
+
+  aside {
+    width: 40%;
+    z-index: 2;
+  }
+
+  .canvas .pinnedList .window {
+    right: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  aside {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  aside {
+    width: 80%;
+    font-size: var(--font-size-body);
+  }
+
+
+}

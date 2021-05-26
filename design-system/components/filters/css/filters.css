@@ -1,0 +1,62 @@
+@media (prefers-color-scheme: light) {
+  legend {
+    color: var(--font-color-dark);
+  }
+
+  label {
+    color: var(--font-color-dark);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  legend {
+    color: var(--font-color-light);
+  }
+
+  label {
+    color: var(--font-color-light);
+  }
+}
+
+#filters {
+  margin-bottom: 0;
+}
+
+#filters h2 {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  margin: var(--spacing-xsmall) 0 var(--spacing-medium) 0;
+}
+
+aside {
+  padding-top: var(--spacing-medium);
+}
+
+fieldset {
+  margin-bottom: var(--spacing-medium);
+}
+
+#filters input {
+  margin-bottom: var(--spacing-xsmall);
+}
+
+aside .navButton {
+  display: inherit;
+  top: var(--spacing-base);
+  opacity: .75;
+}
+
+aside .navButton:hover {
+  opacity: 1;
+}
+
+aside .close {
+  background-size: var(--spacing-large) var(--spacing-large);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+
+}

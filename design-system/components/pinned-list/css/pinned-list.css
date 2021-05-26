@@ -1,0 +1,157 @@
+@media (prefers-color-scheme: light) {
+  .pinnedList .listUtilities {
+    border-bottom: var(--border-lm);
+  }
+
+  .pinnedList {
+    border-right: var(--border-lm);
+    border-top: var(--border-lm);
+    background-color: var(--color-light);
+  }
+
+  .userName {
+    background-color: var(--color-light);
+  }
+
+  .pinnedList .card.selected {
+    background-color: var(--color-light);
+    border-left: 3px solid var(--color-dark);
+  }
+
+  .pinnedList .card.selected:hover {
+    background-color: var(--color-shade);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pinnedList .listUtilities {
+    border-bottom: var(--border-dm);
+  }
+
+  .userName {
+    background-color: var(--color-dark-1);
+  }
+
+  .pinnedList {
+    border-right: var(--border-dm);
+    border-top: var(--border-dm);
+    background-color: var(--color-dark-1);
+  }
+
+  .pinnedList .card.selected {
+    background-color: var(--color-dark-1);
+    border-left: 3px solid var(--color-grey);
+  }
+
+  .card {
+    border-bottom: var(--border-dm);
+    background-color: var(--color-dark);
+  }
+
+  .card:hover {
+    background-color: var(--color-dark-2);
+  }
+
+  .card.selected:hover {
+    background-color: var(--color-dark-2);
+  }
+
+}
+
+.pinnedList {
+  top: 88px;
+  right: 70%;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+  transition: none;
+}
+
+.pinnedList h2 {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    margin-bottom: 0;
+    padding: var(--spacing-xsmall) var(--spacing-medium);
+}
+
+.pinnedList a {
+  text-decoration: none;
+}
+
+.pinnedList .listUtilities {
+  position: initial;
+  border-top: none;
+  padding: var(--spacing-xsmall) var(--spacing-base) !important;
+}
+
+.simpleUserList .card {
+  border-bottom: none;
+}
+
+.simpleUserList .cardMeta p:first-of-type {
+  margin-bottom: 0 !important;
+}
+
+.pinnedList .meta {
+  position: absolute;
+  top: calc(var(--spacing-small) + 6px);
+  right: var(--spacing-base);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: var(--spacing-base);
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.cardMeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMeta p {
+  font-size: var(--font-size-small);
+}
+
+
+.pinnedListVisible {
+  display: initial !important;
+  z-index: 1;
+}
+
+img.listAvatar {
+  width: calc(var(--spacing-xlarge) * 1.1);
+  margin-right: var(--spacing-small);
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+  .pinnedList {
+    display: none;
+    top: 133px !important;
+  }
+
+  .pinnedList .window {
+    right: 0;
+    border-right: none;
+  }
+
+  .pinnedListVisible {
+    right: 0;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+
+}

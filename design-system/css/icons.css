@@ -1,0 +1,78 @@
+@media (prefers-color-scheme: light) {
+  .close {
+    background-image: url('../assets/nav/lm-icon-close.svg');
+  }
+
+  .menu {
+    background-image: url('../assets/nav/lm-icon-menu.svg');
+  }
+
+  .squiggle {
+    background-image: url('../assets/images/squiggle/squiggle-lm.svg');
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .close {
+    background-image: url('../assets/nav/dm-icon-close.svg');
+  }
+
+  .menu {
+    background-image: url('../assets/nav/dm-icon-menu.svg');
+  }
+
+  .squiggle {
+    background-image: url('../assets/images/squiggle/squiggle-dm.svg');
+  }
+}
+
+.close, .menu {
+  width: 40px;
+  height: 40px;
+}
+
+.description li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-base);
+}
+
+.description li .icon {
+  width: var(--spacing-base);
+  height: var(--spacing-base);
+  margin-right: var(--spacing-xsmall);
+  margin-bottom: 0;
+}
+
+.icon.placeholder {
+  background-image: url('../assets/placeholder/circle.svg');
+}
+
+.icon.figma {
+  background-image: url('../assets/logos/figma-mark.svg');
+}
+
+.squiggle {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 420px;
+  background-position: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .squiggle {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .squiggle {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .squiggle {
+    height: 120px;
+  }
+}

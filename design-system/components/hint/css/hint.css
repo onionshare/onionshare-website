@@ -1,0 +1,26 @@
+@media (prefers-color-scheme: light) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+p.hint {
+  position: absolute;
+  bottom: var(--spacing-base);
+  margin-bottom: 0 !important;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: var(--font-size-xsmall) !important;
+  font-weight: bold;
+  opacity: .5;
+  animation: floating 3s ease infinite;
+  max-width: max-content !important;
+}
+
+.fade {
+  opacity: 0 !important;
+}
+
+@media only screen and (max-width: 480px) {}

@@ -1,0 +1,12 @@
+.avatar {
+  width: calc(var(--spacing-xlarge) * 4) !important;
+  height: calc(var(--spacing-xlarge) * 4) !important;
+  margin-bottom: var(--spacing-base) !important;
+  border-radius: 50vh !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .avatar {
+    width: calc(var(--spacing-xlarge) * 3) !important;
+    height: calc(var(--spacing-xlarge) * 3) !important;
+}
