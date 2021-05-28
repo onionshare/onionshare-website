@@ -197,12 +197,20 @@ header.singleNav nav ul {
       background-size: 24rem;
     }
 
+    .featureImage {
+      height: calc(var(--spacing-xxlarge) * 7);
+    }
+
 }
 
 @media only screen and (max-width: 960px) {
   .intro::before {
       background-position-x: calc(100% + calc(var(--spacing-xxlarge) * 2));
       background-size: 24rem;
+    }
+
+    .featureImage {
+      height: calc(var(--spacing-xxlarge) * 6);
     }
 
 }
