@@ -1,4 +1,9 @@
 @media (prefers-color-scheme: light) {
+  ::selection {
+    background-color: rgba(78, 13, 78, 1);
+    color: var(--color-light);
+  }
+
   .logoMark {
     background-image: url('../assets/logo/onionshare-logo-lm.png');
   }
