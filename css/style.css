@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(../assets/fonts/RobotoSlab-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(../assets/fonts/RobotoSlab-Bold.woff) format('woff');
+}
+
 @media (prefers-color-scheme: light) {
   ::selection {
     background-color: rgba(78, 13, 78, 1);
@@ -133,6 +147,11 @@
 
 body {
   transition: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
 }
 
 .icon.matteo {
