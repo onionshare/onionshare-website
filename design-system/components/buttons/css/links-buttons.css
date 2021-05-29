@@ -34,10 +34,11 @@
 
   .btn {
     border: var(--border-dm);
+    background-color: var(--color-dm-shade);
   }
 
   .btn:hover {
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.15);
   }
 
   .primaryBtn {
