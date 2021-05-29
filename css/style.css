@@ -148,10 +148,11 @@ body {
 }
 
 .featureImage {
-  height: calc(var(--spacing-xxlarge) * 8);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 50%;
+  position: relative;
 }
 
 .intro::before {
@@ -197,20 +198,12 @@ header.singleNav nav ul {
       background-size: 24rem;
     }
 
-    .featureImage {
-      height: calc(var(--spacing-xxlarge) * 7);
-    }
-
 }
 
 @media only screen and (max-width: 960px) {
   .intro::before {
       background-position-x: calc(100% + calc(var(--spacing-xxlarge) * 2));
       background-size: 24rem;
-    }
-
-    .featureImage {
-      height: calc(var(--spacing-xxlarge) * 6);
     }
 
 }
@@ -231,7 +224,7 @@ header.singleNav nav ul {
     }
 
     .featureImage {
-      background-position: top;
+      padding-top: 73%;
     }
 
 }
@@ -247,10 +240,6 @@ header.singleNav nav ul {
       width: 100%;
     }
 
-    .featureImage {
-      height: calc(var(--spacing-xxlarge) * 6);
-    }
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -259,16 +248,7 @@ header.singleNav nav ul {
       background-size: 20rem;
     }
 
-    .featureImage {
-      height: calc(var(--spacing-xxlarge) * 5);
-    }
-
 }
 
 @media only screen and (max-width: 375px) {
-
-    .featureImage {
-      height: calc(var(--spacing-xxlarge) * 4);
-    }
-
 }
