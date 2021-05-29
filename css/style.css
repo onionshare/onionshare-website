@@ -154,6 +154,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+header h1 {
+  position: relative;
+  top: -2px;
+}
+
 .icon.matteo {
   background-image: url('../assets/twitter/geminiimatt.jpg');
   border-radius: 50vh;
