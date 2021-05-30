@@ -70,6 +70,10 @@
     background-image: url('../assets/features/whonix-logo-lm.png');
   }
 
+  .icon.parrot {
+    background-image: url('../assets/features/parrot-logo-lm.png');
+  }
+
   .icon.tor {
     background-image: url('../assets/features/tor-logo-lm.png');
   }
@@ -122,6 +126,10 @@
 
   .icon.whonix {
     background-image: url('../assets/features/whonix-logo-dm.png');
+  }
+
+  .icon.parrot {
+    background-image: url('../assets/features/parrot-logo-dm.png');
   }
 
   .featureImage.home {
