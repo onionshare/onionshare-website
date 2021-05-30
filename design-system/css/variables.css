@@ -42,6 +42,7 @@
   --color-green: #50A446;
   --color-light: #FAFAFA;
   --color-light-1: #F5F5F5;
+  --color-dm-shade: rgba(255,255,255,0.1);
   --color-shade: rgba(51,51,51,0.05);
   --color-toast: rgba(172, 232, 178, 1);
   --gradient-dm: linear-gradient(135deg, rgba(233, 98, 253, 1) 0%, rgba(3, 193, 253, 1) 100%);
@@ -75,7 +76,7 @@
   /* BORDERS */
 
   --border-lm: 1px solid rgba(0,0,0,.08);
-  --border-dm: 1px solid rgba(255,255,255,.08);
+  --border-dm: 1px solid rgba(255,255,255,.3);
   --border-input-focus-lm: 1px solid #3D76F5;
   --border-input-focus-dm: 1px solid rgba(255,255,255,0.5);
 
