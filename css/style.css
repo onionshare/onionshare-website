@@ -79,11 +79,19 @@
   }
 
   .featureImage.home {
-    background-image: url('../assets/features/home-lm.png');
+    background-image: url('../assets/features/home-lm.jpg');
+  }
+
+  .featureImage.homemobile {
+    background-image: url('../assets/features/mobile_app_home.jpg');
   }
 
   .featureImage.share {
-    background-image: url('../assets/features/share-lm.png');
+    background-image: url('../assets/features/share-lm.jpg');
+  }
+
+  .featureImage.sharemobile {
+    background-image: url('../assets/features/mobile_app_share.jpg');
   }
 
   .featureImage.receive {
@@ -95,7 +103,11 @@
   }
 
   .featureImage.website {
-    background-image: url('../assets/features/website-lm.png');
+    background-image: url('../assets/features/web-lm.png');
+  }
+
+  .featureImage.websitemobile {
+    background-image: url('../assets/features/mobile_app_web.jpg');
   }
 }
 
@@ -167,6 +179,13 @@ header h1 {
   top: -2px;
 }
 
+.warning {
+  color:red;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+}
+
+
 .icon.matteo {
   background-image: url('../assets/twitter/geminiimatt.jpg');
   border-radius: 50vh;
@@ -182,6 +201,10 @@ header h1 {
 
 .icon.linux {
   background-image: url('../assets/download/linux-logo.png');
+}
+
+.icon.android {
+  background-image: url('../assets/download/android-logo.png');
 }
 
 .featureImage {
