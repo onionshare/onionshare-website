@@ -233,6 +233,10 @@ header h1 {
   width: 70%;
 }
 
+.intro > div > p:not(:first-of-type):not(:last-of-type) {
+  margin: var(--spacing-base) 0;
+}
+
 .pinnedList .card {
   pointer-events: none;
 }
@@ -308,7 +312,20 @@ header.singleNav nav ul {
       background-size: 20rem;
     }
 
+  .intro {
+    margin-top: calc(2.5rem + var(--spacing-medium) * 2);
+    height: auto;
+    min-height: calc(100vh - (2.5rem + var(--spacing-medium) * 2));
+  }
+
+  .intro p a {
+    margin: 0
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
+  body {
+    min-width: unset;
+  }
 }
