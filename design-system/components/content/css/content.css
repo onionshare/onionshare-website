@@ -28,6 +28,14 @@
   text-align: center !important;
 }
 
+.centeredContent p {
+  margin: 0 auto 1rem auto;
+}
+
+p + .contentRowContent {
+  margin-top: 2rem;
+}
+
 .centeredContent .contentItem {
   text-align: center !important;
 }
@@ -65,6 +73,12 @@
   width: 80% !important;
   margin: 0 auto;
 }
+
+/* .featureImage.mobileImage {
+  width: 80% !important;
+  margin: 0 auto;
+  background-size: 50%;
+} */
 
 .contentItem .description:last-of-type {
   margin-bottom: 0;
