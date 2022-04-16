@@ -222,6 +222,10 @@ header h1 {
   position: relative;
 }
 
+.featureImage.mobileImage {
+  padding-top: 0;
+}
+
 .intro::before {
   background-repeat: no-repeat;
   background-position-y: center;
@@ -330,6 +334,10 @@ header.singleNav nav ul {
 
     .featureImage {
       padding-top: 73%;
+    }
+
+    h2 {
+      text-align: center;
     }
 }
 

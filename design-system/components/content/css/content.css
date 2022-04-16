@@ -63,6 +63,10 @@ p + .contentRowContent {
   width: 50%;
 }
 
+#features .featureImage {
+  padding-top: 0;
+}
+
 .featureImage img {
   border-radius: .5rem;
   width: 100%;
@@ -73,12 +77,6 @@ p + .contentRowContent {
   width: 80% !important;
   margin: 0 auto;
 }
-
-/* .featureImage.mobileImage {
-  width: 80% !important;
-  margin: 0 auto;
-  background-size: 50%;
-} */
 
 .contentItem .description:last-of-type {
   margin-bottom: 0;
