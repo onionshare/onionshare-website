@@ -79,7 +79,7 @@
   }
 
   .featureImage.home {
-    background-image: url('../assets/features/home-lm.jpg');
+    background-image: url('../assets/features/home-lm.png');
   }
 
   .featureImage.homemobile {
@@ -87,7 +87,7 @@
   }
 
   .featureImage.share {
-    background-image: url('../assets/features/share-lm.jpg');
+    background-image: url('../assets/features/share-lm.png');
   }
 
   .featureImage.sharemobile {
@@ -103,7 +103,7 @@
   }
 
   .featureImage.website {
-    background-image: url('../assets/features/web-lm.png');
+    background-image: url('../assets/features/website-lm.png');
   }
 
   .featureImage.websitemobile {
