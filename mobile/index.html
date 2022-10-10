@@ -7,7 +7,7 @@
 	<meta name="author" content="Glenn Sorrentino">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>🧅 OnionShare</title>
+	<title>🧅 OnionShare Mobile Beta</title>
 	<link rel="stylesheet" href="../design-system/css/style.css">
 	<link rel="stylesheet" href="../css/style.css">
 
@@ -32,54 +32,43 @@
 
 	<main id="content">
 
-		<section class="intro homeIntro  wrapper">
+		<section class="intro homeIntro mobileIntro wrapper">
 			<div>
 				<!-- <div class="icon large onionshare"></div> -->
-				<h2>OnionShare Mobile is Ready for Testing!</h2>
-				<p>The OnionShare teams working with Tor Project, Calyx Institute and Guardian Project, 
-					have created the official OnionShare mobile apps for Android and iOS.
-					The apps are now in public beta testing phase, ready for feedback on stability, 
-					usability and privacy controls.
-				</p>
-				<br/><br/>
-				<p class="warning">
-					WARNING: These apps are not yet audited, and in early alpha/beta state. 
-					Please only use for testing.
-				</p>
-				<p class="warning">
-					Report any issues to 
-					<a href="mailto:support@guardianproject.info">Guardian Project Support Helpdesk</a>
-					<br/>
-					or Github on <a href="https://github.com/onionshare">the appropriate Github project</a>
-				</p> 
+				<h1>OnionShare Mobile Beta</h1>
+				<p>A collaboration with the teams at The Tor Project, The Calyx Institute and Guardian Project.</p>
 				<a role="button" class="btn primaryBtn firstAction" href="#download">Join Mobile Testing</a>
 			</div>
 		</section>
 
 		<section id="download" class="content centeredContent contentRow tertiaryContent wrapper">
 			<h2>Download</h2>
+			<p class="warning">
+				WARNING: These apps are not yet audited, and in early alpha/beta state.
+				Please only use for testing.
+			</p>
+			<p class="warning">
+				Report any issues to
+				<a href="mailto:support@guardianproject.info">Guardian Project Support Helpdesk</a>
+				<br/>
+				or Github on <a href="https://github.com/onionshare">the appropriate Github project</a>
+			</p>
 			<div class="contentRowContent">
 				<div class="contentItem blockContent">
 					<div class="description">
 						<div class="icon large android"></div>
-						<h3>Android on Google Play</h3>
-						<a role="button" class="btn" href="https://play.google.com/store/apps/details?id=org.onionshare.android"
-							rel="noopener noreferrer nofollow" target="_blank">Download</a>
-					</div>
-				</div>
-				<div class="contentItem blockContent">
-					<div class="description">
-						<div class="icon large android"></div>
-						<h3>Android via F-Droid Repo</h3>
+						<h3>Android</h3>
 						<a role="button" class="btn"
 							href="https://github.com/onionshare/onionshare-android-nightly"
-							rel="noopener noreferrer nofollow" target="_blank">Add Repo</a>
+							rel="noopener noreferrer nofollow" target="_blank">F-Droid Repo</a>
+							<a role="button" class="btn" href="https://play.google.com/store/apps/details?id=org.onionshare.android"
+								rel="noopener noreferrer nofollow" target="_blank">Google Play</a>
 					</div>
 				</div>
 				<div class="contentItem blockContent">
 					<div class="description">
 						<div class="icon large mac"></div>
-						<h3>iOS (iPhone and iPad)</h3>
+						<h3>iOS</h3>
 						<a role="button" class="btn" href="https://testflight.apple.com/join/ZCJeY65W"
 							rel="noopener noreferrer nofollow" target="_blank">Join Testflight</a>
 					</div>
@@ -87,40 +76,28 @@
 			</div>
 		</section>
 
-		<section class="content primaryContent wrapper">
-			<div class="centeredContent">
-				<h2>Features and Functionality</h2>
-			</div>
+		<section id="features" class="content primaryContent wrapper">
+			<h2>Features and Functionality</h2>
 			<div class="contentItem standardItem">
 				<div class="description">
-					<h3>Your Private Productivity Suite.. In Your Pocket!</h3>
-					<p>Share files and host websites right from your phone, all over Tor Onion Services, built by the developers who created Orbot, Briar, Onion Browser and CalyxOS!</p>
+					<h3>Share Privately</h3>
+					<p>Safely share important tax documents, medical information, or unpublished research.</p>
 				</div>
-				<div class="featureImage homemobile">
+				<div class="featureImage mobileImage">
+					<img src="../assets/features/share.png" alt="Sharing UI in different states">
 				</div>
 			</div>
 			<div class="contentItem flippedItem">
 				<div class="description flip">
-					<h3>Share Files</h3>
-					<p>Ever wanted to share something without also sharing it with Google or Dropbox? Tax documents,
-						medical information, or unpublished research? Share files directly and securely without the
-						middlemen.</p>
-				</div>
-				<div class="featureImage sharemobile">
-				</div>
-			</div>
-			<div class="contentItem flippedItem">
-				<div class="description">
-					<h3>OnionService On-Demand</h3>
+					<h3>Launch an Onion Website</h3>
 					<p>Host a static website and make it accessible through the Tor Browser or Onion Browser without worrying about
 						setting up a server.</p>
 				</div>
-				<div class="featureImage websitemobile">
+				<div class="featureImage">
+					<img src="../assets/features/host.png" alt="Sharing UI in different states">
 				</div>
 			</div>
 		</section>
-
-
 	</main>
 
 	<footer class="wrapper">
