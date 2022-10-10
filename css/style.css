@@ -185,7 +185,6 @@ header h1 {
   font-weight: 400;
 }
 
-
 .icon.matteo {
   background-image: url('../assets/twitter/geminiimatt.jpg');
   border-radius: 50vh;
@@ -218,15 +217,14 @@ header h1 {
 .intro::before {
   background-repeat: no-repeat;
   background-position-y: center;
-  background-position-x: calc(100% - var(--spacing-xxlarge));
-  background-size: 28rem;
+  /* background-position-x: calc(125% - var(--spacing-xxlarge)); */
+  background-size: 38rem;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  transform: rotate(-5deg);
-  top: var(--spacing-xlarge);
   z-index: -1;
+  left: 790px;
 }
 
 .intro > div {
@@ -252,30 +250,34 @@ header.singleNav nav ul {
 
 @media only screen and (max-width: 1280px) {
     .intro::before {
-      background-position-x: calc(100% + var(--spacing-xxlarge));
+      left: 640px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .intro::before {
-      background-position-x: calc(100% + var(--spacing-xxlarge));
-      background-size: 24rem;
+      left: 640px;
+
+      /* background-position-x: calc(115% + var(--spacing-xxlarge)); */
     }
 
 }
 
 @media only screen and (max-width: 960px) {
   .intro::before {
-      background-position-x: calc(100% + calc(var(--spacing-xxlarge) * 2));
-      background-size: 24rem;
+    /* background-position-x: calc(180% + var(--spacing-xxlarge)); */
+    left: 480px;
+
     }
 
 }
 
 @media only screen and (max-width: 768px) {
   .intro::before {
-      background-position-x: calc(100% + calc(var(--spacing-xxlarge) * 3));
-      background-size: 24rem;
+    /* background-position-x: calc(175% + var(--spacing-xxlarge)); */
+      background-size: 32rem;
+      left: 420px;
+
     }
 
     .description {
@@ -295,8 +297,6 @@ header.singleNav nav ul {
 
 @media only screen and (max-width: 640px) {
   .intro::before {
-      background-position-x: calc(100% + calc(var(--spacing-xxlarge) * 3));
-      background-size: 20rem;
       background: none;
     }
 
@@ -308,7 +308,7 @@ header.singleNav nav ul {
 
 @media only screen and (max-width: 480px) {
   .intro::before {
-      background-position-x: calc(100% + calc(var(--spacing-xxlarge) * 4));
+      background-position-x: calc(125% + calc(var(--spacing-xxlarge) * 4));
       background-size: 20rem;
     }
 
