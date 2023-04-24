@@ -28,6 +28,14 @@
   text-align: center !important;
 }
 
+.centeredContent p {
+  margin: 0 auto 1rem auto;
+}
+
+p + .contentRowContent {
+  margin-top: 2rem;
+}
+
 .centeredContent .contentItem {
   text-align: center !important;
 }
@@ -53,6 +61,10 @@
 
 .featureImage {
   width: 50%;
+}
+
+#features .featureImage {
+  padding-top: 0;
 }
 
 .featureImage img {
