@@ -5,3 +5,5 @@
 /validation-report.json
 /validation-status.json
 *.*~
+.DS_Store
+.idea
