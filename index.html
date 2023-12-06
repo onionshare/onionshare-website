@@ -1,195 +1,90 @@
-<!doctype html>
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Science & Design, Inc - scidsg.org">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="OnionShare is a tool for anonymous peer-to-peer file sharing, chatting, and web hosting."> 
+    <title>🐘 Mastodon Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-	<title>OnionShare</title>
-
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="design-system/css/style.css">
-
-	<script src="design-system/js/jquery-min.js"></script>
-	<script src="design-system/js/design-system.js"></script>
 </head>
-
 <body>
-	<a href="#content" class="skiplink btn primaryBtn">Skip to content</a>
-	<header class="island">
-		<div class="wrapper">
-			<div class="logo">
-				<div class="logoMark"></div>
-				<h1><a href="#">OnionShare</a></h1>
-			</div>
-			<nav>
-				<button class="mobileNav btnIcon" aria-label="Expand mobile navigation" aria-expanded="false">Menu</button>
-				<ul>
-					<li><a class="wrapper" aria-label="Read our documentation" href="https://docs.onionshare.org/">Docs</a></li>
-					<li><a class="wrapper" aria-label="Contribute to OnionShare" href="https://github.com/onionshare/onionshare">Code</a></li>
-					<li><a class="btn" aria-label="Download OnionShare" href="https://opencollective.com/scidsg/contribute/onionshare-supporter-67247" target="_blank" rel="noopener noreferrer">Donate</a></li>
-					<li><a class="btn primaryBtn" aria-label="Download OnionShare" href="#download" target="_blank" rel="noopener noreferrer">Download</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <header>
+        <h1>🗓️ Mastodon Scheduler</h1>
+    </header>
 
-	<main id="content">
-		<section class="intro">
-			<div class="wrapper">
-				<h2>Productivity + Privacy</h2>
-				<p>🧅 OnionShare is an open-source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network.</p>
-				<a class="btn primaryBtn" aria-label="Download OnionShare" href="#download" target="_blank" rel="noopener noreferrer">Download OnionShare</a>
-				<img src="design-system/images/cover.png" alt="OnionShare's mobile and desktop applications">
-			</div>
-			<p class="hint">Scroll Down</p>
-		</section>
+    <main>
+        <!-- Display flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="notification">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <div class="form-container">
+            <!-- Form for posting status with file upload and scheduling -->
+            <form method="post" enctype="multipart/form-data">
 
-		<section class="cardSection" id="download">
-			<div class="wrapper">
-				<h3>Download OnionShare</h3>
-				<h4>Desktop Apps</h4>
-				<div class="groupRow card">
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/windows-logo.png" alt="Unless the image is decorative, add alt text 9.">
-						<h5>Windows</h5>
-						<a class="btn" aria-label="Download OnionShare" href="https://onionshare.org/dist/2.6/OnionShare-win64-2.6.msi" target="_blank" rel="noopener noreferrer">Download</a>
-						<p class="meta"><a href="https://onionshare.org/dist/2.6/OnionShare-win64-2.6.msi.asc" target="_blank" aria-label="Download OnionShare Windows signing key" rel="noopener noreferrer">Signature</a> (<a href="https://docs.onionshare.org/2.6/en/install.html#verifying-pgp-signatures" target="_blank" aria-label="View instructions for verifying PGP signatures" rel="noopener noreferrer">👈 What's this?</a>)</p>
-					</div>
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/apple-logo.png" alt="Unless the image is decorative, add alt text 10.">
-						<h5>MacOS</h5>
-						<a class="btn" aria-label="Download OnionShare" href="https://onionshare.org/dist/2.6/OnionShare-2.6.dmg" target="_blank" rel="noopener noreferrer">Download</a>
-						<p class="meta"><a href="https://onionshare.org/dist/2.6/OnionShare-2.6.dmg.asc" target="_blank" aria-label="Download OnionShare Windows signing key" rel="noopener noreferrer">Signature</a> (<a href="https://docs.onionshare.org/2.6/en/install.html#verifying-pgp-signatures" target="_blank" aria-label="View instructions for verifying PGP signatures" rel="noopener noreferrer">👈 What's this?</a>)</p>
-					</div>
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/linux-logo.png" alt="Unless the image is decorative, add alt text 11.">
-						<h5>Linux</h5>
-						<a class="btn" aria-label="Download OnionShare" href="https://docs.onionshare.org/2.6/en/install.html#linux" target="_blank" rel="noopener noreferrer">Learn More</a>
-					</div>
-				</div>
-				<h4>Mobile Apps</h4>
-				<p>OnionShare's mobile applications are developed in collaboration with <a href="https://guardianproject.info" target="_blank" rel="noopener noreferrer" aria-label="Go to Guardian Project's website (external site)">Guardian Project</a> and <a href="https://calyxinstitute.org" target="_blank" rel="noopener noreferrer" aria-label="Go to The Calyx Institute's website (external site)">The Calyx Institute</a>.</p>
-				<div class="groupRow card">
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/android-logo.png" alt="Android Logo">
-						<h5>Android</h5>
-						<a class="btn" aria-label="Go to the Google Play Store (external link)" href="https://play.google.com/store/apps/details?id=org.onionshare.android&hl=en_US" target="_blank" rel="noopener noreferrer">Play Store</a>
-					</div>
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/aurora-logo.png" alt="Aurora Logo">
-						<h5>De-Googled Android</h5>
-						<a class="btn" aria-label="Go to the Aurora Store on F-Droid (external link)" href="https://aurorastore.org/aurora-store-download/" target="_blank" rel="noopener noreferrer">Aurora</a>
-					</div>
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/apple-logo.png" alt="Apple/iOS Logo">
-						<h5>iOS</h5>
-						<a class="btn" aria-label="Go to the Apple App Store (external link)" href="https://apps.apple.com/gb/app/onionshare/id1601890129" target="_blank" rel="noopener noreferrer">App Store</a>
-					</div>
-				</div>
-			</div>
-		</section>
+                <label for="status">Your Message</label>
+                <textarea id="status" name="status" required placeholder="What's on your mind?"></textarea>
 
-		<section id="section1">
-			<div class="wrapper">
-				<h3>Why OnionShare?</h3>
-				<div class="group">
-					<div class="description">
-						<h4>Mobile-Ready</h4>
-						<p>Take OnionShare with you on the go. Share files privately wherever you are.</p>
-					</div>
-					<div class="mobileImageContainer">
-						<img src="design-system/images/mobile-cover.png" alt="iOS and Android apps for OnionShare.">
-					</div>
-				</div>
-				<div class="group">
-					<div class="description flip">
-						<h4>Available Everywhere</h4>
-						<p>OnionShare is available for Windows, Mac, and Linux, and comes preinstalled in operating systems like QubesOS, Tails, and ParrotOS.</p>
-					</div>
-					<div class="mobileImageContainer">
-						<img src="design-system/images/everywhere-cover.png" alt="Image of OnionShare Desktop, surrounded by OS logos.">
-					</div>
-				</div>
-				<div class="group">
-					<div class="description">
-						<h4>More Than Sharing</h4>
-						<p>OnionShare allows you to quickly host an onion site, chat, and create a private dropdown in addition to sharing files!</p>
-					</div>
-					<div class="mobileImageContainer">
-						<img src="design-system/images/more-cover.png" alt="UI from OnionShare desktop showing Share, Receive, Host a Website, and Chat functionality.">
-					</div>
-				</div>
-			</div>
-		</section>
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" name="image">
 
-		<section class="cardSection">
-			<div class="wrapper">
-				<h3>Included With</h3>
-				<div class="groupRow card">
-					<div class="description">
-						<img class="icon osIcon iconLarge" src="design-system/images/logo/qubes-logo-lm.png" alt="QubesOS Logo">
-						<p>Qubes OS is a reasonably secure operating system.</p>
-						<p class="meta"><a href="https://www.qubes-os.org/" target="_blank" rel="noopener noreferrer">Learn about QubesOS</a></p>
-					</div>
-					<div class="description">
-						<img class="icon osIcon iconLarge" src="design-system/images/logo/tails-logo-lm.png" alt="Tails Logo">
-						<p>Tails is a Tor-based OS loaded from a USB stick.</p>
-						<p class="meta"><a href="https://tails.net/" target="_blank" rel="noopener noreferrer">Learn about Tails</a></p>	
-					</div>
-					<div class="description">
-						<img class="icon osIcon iconLarge" src="design-system/images/logo/whonix-logo-lm.png" alt="Whonix Logo">
-						<p>Whonix uses VMs for OS functionality to achieve security through isolation.</p>
-						<p class="meta"><a href="https://www.whonix.org/" target="_blank" rel="noopener noreferrer">Learn about Whonix</a></p>
-					</div>
-					<div class="description">
-						<img class="icon iconLarge" src="design-system/images/logo/parrot-logo-lm.png" alt="ParrotOS Logo">
-						<p>Parrot OS is an operating system for developers and security specialists.</p>
-						<p class="meta"><a href="https://parrotsec.org/" target="_blank" rel="noopener noreferrer">Learn about Parrot OS</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+                <label for="image_alt">Image Alt Text</label>
+                <input type="text" id="image_alt" name="image_alt" placeholder="Describe the image">
 
-		<section class="cardSection">
-			<div class="wrapper">
-				<h3>Partnering Orgs</h3>
-				<div class="groupRow card partnerCard">
-					<div class="description">
-						<img class="icon pIcon" src="design-system/images/logo/calyx-logo.png" alt="The Calyx Institute Logo.">
-						<p class="meta"><a href="https://guardianproject.info/" target="_blank" rel="noopener noreferrer">Learn about The Calyx Institute</a></p>	
-					</div>
-					<div class="description">
-						<img class="icon pIcon" src="design-system/images/logo/guardian-logo.png" alt="Guardian Project Logo.">
-						<p class="meta"><a href="https://guardianproject.info/" target="_blank" rel="noopener noreferrer">Learn about Guardian Project</a></p>	
-					</div>
-					<div class="description">
-						<img class="icon pIcon" src="design-system/images/logo/scidsg-logo.png" alt="Science & Design Logo">
-						<p class="meta"><a href="https://scidsg.org" target="_blank" rel="noopener noreferrer">Learn about Science & Design</a></p>
-					</div>
-					<div class="description">
-						<img class="icon pIcon" src="design-system/images/logo/tor-logo.png" alt="Tor Project Logo">
-						<p class="meta"><a href="https://torproject.org" target="_blank" rel="noopener noreferrer">Learn about Tor Project</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+                <label for="cw_text">Content Warning (Optional)</label>
+                <input type="text" id="cw_text" name="cw_text" placeholder="Add a content warning">
 
-	</main>
+                <label for="schedule_time">Schedule Time</label>
+                <input type="datetime-local" id="schedule_time" name="schedule_time">
 
-	<footer>
-		<div class="wrapper">
-			<p>OnionShare was developed by <a href="https://twitter.com/micahflee" target="_blank" rel="noopener noreferrer nofollow">Micah Lee</a>, et al. and is open source, released under the GPLv3.</p>
-			<p>Like all software, OnionShare may contain bugs or vulnerabilities.</p>
-			<p>🧅 http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ <a href="/onion.txt" target="_blank" rel="noopener noreferrer nofollow">(proof)</a></p>
-			<p><a href="privacy.html">Privacy policy</a></p>
-			<p class="byline">Site design by <a href="https://scidsg.org" target="_blank" rel="noopener noreferrer">Science & Design, Inc.</a></p>
-		</div>
-	</footer>
+                <button type="submit">Post or Schedule</button>
+            </form>
+        </div>
 
+        <div class="scheduled-posts">
+            <h2>🗓️ Scheduled Posts</h2>
+            <ul>
+                {% if next_up_post %}
+                    <li class="next-up">
+                        <div class="nextup-container">
+                            <div class="badge-container">
+                                <span class="badge">⏰ Next Up</span>
+                            {% if next_up_post.cw_text %}
+                                <span class="content-warning badge">Content Warning</span>
+                            {% endif %}
+                            </div>
+                            <span class="meta">{{ next_up_post.schedule_time }}</span><br>
+                            {{ next_up_post.content }}
+                            {% if next_up_post.image_path %}
+                                <img src="{{ url_for('static', filename=next_up_post.image_path) }}" alt="{{ next_up_post.image_alt_text }}">
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endif %}
+                {% for post in scheduled_posts %}
+                    <li{% if next_up_post and post.id == next_up_post.id %} class="next-up"{% endif %}>
+                        <div class="badge-container">
+                            {% if post.cw_text %}
+                                <span class="content-warning badge">Content Warning</span>
+                            {% endif %}
+                        </div>
+                        <span class="meta">{{ post.schedule_time }}</span><br>{{ post.content }}
+                        {% if post.image_path %}
+                            <img src="{{ url_for('static', filename=post.image_path) }}" alt="{{ post.image_alt_text }}">
+                        {% endif %}
+                    </li>
+                {% else %}
+                    <li>No scheduled posts</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </main>
 </body>
-
 </html>
