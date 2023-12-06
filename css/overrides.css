@@ -17,7 +17,8 @@
 @media (prefers-color-scheme: dark) {
 
 .osIcon,
-.pIcon {
+.pIcon,
+.logoMark {
   filter: invert(1) saturate(0);
 }
 	
