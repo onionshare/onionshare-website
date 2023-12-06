@@ -3,42 +3,35 @@
 
 @media (prefers-color-scheme: light) {
   @-moz-document url-prefix() {
-    header, footer, nav.staged {
-      background-color: rgba(255, 255, 255, 1) !important;
-    }
-
-    .articleIntro div > * {
-      background-color: rgba(255, 255, 255, 1) !important;
-      opacity: 1;
-    }
-
-    .articleIntro .meta {
-      background-color: rgba(255, 255, 255, 1) !important;
-    }
-
-    aside {
-      background-color: rgba(252,252,252,1)!important;
+    header, footer, nav ul {
+      background-color: var(--color-light) !important;
     }
   }
 }
 
 @media (prefers-color-scheme: dark) {
   @-moz-document url-prefix() {
-    header, footer, nav.staged {
-      background-color: rgba(51, 51, 51, 1) !important;
+    header, footer {
+      background-color: var(--color-shade-dm) !important;
     }
+  }
+}
 
-    .articleIntro div > * {
-      background-color: rgba(51, 51, 51, 1) !important;
-      opacity: 1;
+@media only screen and (max-width: 768px) {
+
+  @media (prefers-color-scheme: light) {
+    @-moz-document url-prefix() {
+      nav ul {
+        background-color: var(--color-light) !important;
+      }
     }
+  }
 
-    .articleIntro .meta {
-      background-color: rgba(51, 51, 51, 1) !important;
-    }
-
-    aside {
-      background-color: rgba(46,46,46,1)!important;
+  @media (prefers-color-scheme: dark) {
+    @-moz-document url-prefix() {
+      nav ul {
+        background-color: var(--color-shade-dm) !important;
+      }
     }
   }
 }

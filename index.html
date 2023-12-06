@@ -4,215 +4,175 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Glenn Sorrentino">
+	<meta name="author" content="Science & Design, Inc - scidsg.org">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="OnionShare is a tool for anonymous peer-to-peer file sharing, chatting, and web hosting."> 
 
-	<title>🧅 OnionShare</title>
+	<title>OnionShare</title>
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="design-system/css/style.css">
-	<link rel="stylesheet" href="css/style.css">
 
+	<script src="design-system/js/jquery-min.js"></script>
+	<script src="design-system/js/design-system.js"></script>
 </head>
 
 <body>
-
-	<header class="singleNav">
-		<a href="#content" class="assistiveText">Skip to Main Content</a>
+	<a href="#content" class="skiplink btn primaryBtn">Skip to content</a>
+	<header class="island">
 		<div class="wrapper">
-			<div class="logoMark"></div>
-			<h1 class="logo"><a href="#">OnionShare</a></h1>
-			<nav id="navigation">
+			<div class="logo">
+				<div class="logoMark"></div>
+				<h1><a href="#">OnionShare</a></h1>
+			</div>
+			<nav>
+				<button class="mobileNav btnIcon" aria-label="Expand mobile navigation" aria-expanded="false">Menu</button>
 				<ul>
-					<li><a href="mobile">Mobile</a></li>
-					<li><a href="https://docs.onionshare.org/" rel="noopener noreferrer nofollow"
-							target="_blank">Docs</a></li>
-					<li><a href="https://github.com/onionshare/onionshare" rel="noopener noreferrer nofollow"
-							target="_blank">Contribute</a></li>
+					<li><a class="wrapper" aria-label="Read our documentation" href="https://docs.onionshare.org/">Docs</a></li>
+					<li><a class="wrapper" aria-label="Contribute to OnionShare" href="https://github.com/onionshare/onionshare">Code</a></li>
+					<li><a class="btn" aria-label="Download OnionShare" href="https://opencollective.com/scidsg/contribute/onionshare-supporter-67247" target="_blank" rel="noopener noreferrer">Donate</a></li>
+					<li><a class="btn primaryBtn" aria-label="Download OnionShare" href="#download" target="_blank" rel="noopener noreferrer">Download</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<!-- HOME - INTRO -->
-
 	<main id="content">
-
-		<section class="intro homeIntro  wrapper">
-			<div>
-				<!-- <div class="icon large onionshare"></div> -->
-				<h1>Privacy + Productivity</h1>
-				<p>🧅 OnionShare is an open source tool that lets you securely and anonymously share files, host
-					websites, and chat with friends using the Tor network.</p>
-				<a role="button" class="btn primaryBtn firstAction" href="#download">Download v2.6</a>
+		<section class="intro">
+			<div class="wrapper">
+				<h2>Productivity + Privacy</h2>
+				<p>🧅 OnionShare is an open-source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network.</p>
+				<a class="btn primaryBtn" aria-label="Download OnionShare" href="#download" target="_blank" rel="noopener noreferrer">Download OnionShare</a>
+				<img src="design-system/images/cover.png" alt="OnionShare's mobile and desktop applications">
 			</div>
+			<p class="hint">Scroll Down</p>
 		</section>
 
-		<section id="download" class="content centeredContent contentRow tertiaryContent wrapper">
-			<h2>Download</h2>
-			<div class="contentRowContent">
-				<div class="contentItem blockContent">
+		<section class="cardSection" id="download">
+			<div class="wrapper">
+				<h3>Download OnionShare</h3>
+				<h4>Desktop Apps</h4>
+				<div class="groupRow card">
 					<div class="description">
-						<div class="icon large windows"></div>
-						<h3>Windows</h3>
-						<a role="button" class="btn" href="/dist/2.6/OnionShare-win64-2.6.msi"
-							rel="noopener noreferrer nofollow" target="_blank">Download 64-Bit</a>
-						<a role="button" class="btn" href="/dist/2.6/OnionShare-win32-2.6.msi"
-							rel="noopener noreferrer nofollow" target="_blank">Download 32-Bit</a>
-						<a class="meta" href="/dist/2.6/OnionShare-win64-2.6.msi.asc" rel="noopener noreferrer nofollow"
-							target="_blank">Sig 64-Bit</a>
-						<a class="meta" href="/dist/2.6/OnionShare-win32-2.6.msi.asc" rel="noopener noreferrer nofollow"
-							target="_blank">Sig 32-Bit</a>
-						<a class="meta" href="https://docs.onionshare.org/2.6/en/install.html#verifying-pgp-signatures"
-							rel="noopener noreferrer nofollow" target="_blank">&#40;What's this?&#41;</a>
+						<img class="icon iconLarge" src="design-system/images/logo/windows-logo.png" alt="Unless the image is decorative, add alt text 9.">
+						<h5>Windows</h5>
+						<a class="btn" aria-label="Download OnionShare" href="https://onionshare.org/dist/2.6/OnionShare-win64-2.6.msi" target="_blank" rel="noopener noreferrer">Download</a>
+						<p class="meta"><a href="https://onionshare.org/dist/2.6/OnionShare-win64-2.6.msi.asc" target="_blank" aria-label="Download OnionShare Windows signing key" rel="noopener noreferrer">Signature</a> (<a href="https://docs.onionshare.org/2.6/en/install.html#verifying-pgp-signatures" target="_blank" aria-label="View instructions for verifying PGP signatures" rel="noopener noreferrer">👈 What's this?</a>)</p>
+					</div>
+					<div class="description">
+						<img class="icon iconLarge" src="design-system/images/logo/apple-logo.png" alt="Unless the image is decorative, add alt text 10.">
+						<h5>MacOS</h5>
+						<a class="btn" aria-label="Download OnionShare" href="https://onionshare.org/dist/2.6/OnionShare-2.6.dmg" target="_blank" rel="noopener noreferrer">Download</a>
+						<p class="meta"><a href="https://onionshare.org/dist/2.6/OnionShare-2.6.dmg.asc" target="_blank" aria-label="Download OnionShare Windows signing key" rel="noopener noreferrer">Signature</a> (<a href="https://docs.onionshare.org/2.6/en/install.html#verifying-pgp-signatures" target="_blank" aria-label="View instructions for verifying PGP signatures" rel="noopener noreferrer">👈 What's this?</a>)</p>
+					</div>
+					<div class="description">
+						<img class="icon iconLarge" src="design-system/images/logo/linux-logo.png" alt="Unless the image is decorative, add alt text 11.">
+						<h5>Linux</h5>
+						<a class="btn" aria-label="Download OnionShare" href="https://docs.onionshare.org/2.6/en/install.html#linux" target="_blank" rel="noopener noreferrer">Learn More</a>
 					</div>
 				</div>
-				<div class="contentItem blockContent">
+				<h4>Mobile Apps</h4>
+				<p>OnionShare's mobile applications are developed in collaboration with <a href="https://guardianproject.info" target="_blank" rel="noopener noreferrer" aria-label="Go to Guardian Project's website (external site)">Guardian Project</a> and <a href="https://calyxinstitute.org" target="_blank" rel="noopener noreferrer" aria-label="Go to The Calyx Institute's website (external site)">The Calyx Institute</a>.</p>
+				<div class="groupRow card">
 					<div class="description">
-						<div class="icon large mac"></div>
-						<h3>MacOS</h3>
-						<a role="button" class="btn" href="/dist/2.6/OnionShare-2.6.dmg"
-							rel="noopener noreferrer nofollow" target="_blank">Download</a>
-						<a class="meta" href="/dist/2.6/OnionShare-2.6.dmg.asc" rel="noopener noreferrer nofollow"
-							target="_blank">Sig</a> <a class="meta"
-							href="https://docs.onionshare.org/2.6/en/install.html#verifying-pgp-signatures"
-							rel="noopener noreferrer nofollow" target="_blank">&#40;What's this?&#41;</a>
+						<img class="icon iconLarge" src="design-system/images/logo/android-logo.png" alt="Android Logo">
+						<h5>Android</h5>
+						<a class="btn" aria-label="Go to the Google Play Store (external link)" href="https://play.google.com/store/apps/details?id=org.onionshare.android&hl=en_US" target="_blank" rel="noopener noreferrer">Play Store</a>
 					</div>
-				</div>
-				<div class="contentItem blockContent">
 					<div class="description">
-						<div class="icon large linux"></div>
-						<h3>Linux</h3>
-						<a role="button" class="btn"
-							href="https://docs.onionshare.org/2.6/en/install.html#linux"
-							rel="noopener noreferrer nofollow" target="_blank">Learn More</a>
+						<img class="icon iconLarge" src="design-system/images/logo/aurora-logo.png" alt="Aurora Logo">
+						<h5>De-Googled Android</h5>
+						<a class="btn" aria-label="Go to the Aurora Store on F-Droid (external link)" href="https://aurorastore.org/aurora-store-download/" target="_blank" rel="noopener noreferrer">Aurora</a>
 					</div>
-				</div>
-				<div class="contentItem blockContent">
 					<div class="description">
-						<div class="icon large mac"></div>
-						<div class="icon large android"></div>
-						<h3>iOS / Android</h3>
-						<a role="button" class="btn" href="mobile/">Learn More</a>
+						<img class="icon iconLarge" src="design-system/images/logo/apple-logo.png" alt="Apple/iOS Logo">
+						<h5>iOS</h5>
+						<a class="btn" aria-label="Go to the Apple App Store (external link)" href="https://apps.apple.com/gb/app/onionshare/id1601890129" target="_blank" rel="noopener noreferrer">App Store</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="content primaryContent wrapper">
-			<div class="centeredContent">
-				<h2>Features and Functionality</h2>
-			</div>
-			<div class="contentItem standardItem">
-				<div class="description">
-					<h3>Your Private Productivity Suite</h3>
-					<p>Share files, host websites, and chat anonymously via a new tabbed interface for maximum
-						productivity.</p>
+		<section id="section1">
+			<div class="wrapper">
+				<h3>Why OnionShare?</h3>
+				<div class="group">
+					<div class="description">
+						<h4>Mobile-Ready</h4>
+						<p>Take OnionShare with you on the go. Share files privately wherever you are.</p>
+					</div>
+					<div class="mobileImageContainer">
+						<img src="design-system/images/mobile-cover.png" alt="iOS and Android apps for OnionShare.">
+					</div>
 				</div>
-				<div class="featureImage home">
+				<div class="group">
+					<div class="description flip">
+						<h4>Available Everywhere</h4>
+						<p>OnionShare is available for Windows, Mac, and Linux, and comes preinstalled in operating systems like QubesOS, Tails, and ParrotOS.</p>
+					</div>
+					<div class="mobileImageContainer">
+						<img src="design-system/images/everywhere-cover.png" alt="Image of OnionShare Desktop, surrounded by OS logos.">
+					</div>
 				</div>
-			</div>
-			<div class="contentItem flippedItem">
-				<div class="description flip">
-					<h3>Share Files</h3>
-					<p>Ever wanted to share something without also sharing it with Google or Dropbox? Tax documents,
-						medical information, or unpublished research? Share files directly and securely without the
-						middlemen.</p>
-				</div>
-				<div class="featureImage share">
-				</div>
-			</div>
-			<div class="contentItem standardItem">
-				<div class="description">
-					<h3>Receive Files</h3>
-					<p>Set up a dropbox for anyone to send you files anonymously.</p>
-				</div>
-				<div class="featureImage receive">
-				</div>
-			</div>
-			<div class="contentItem flippedItem">
-				<div class="description flip">
-					<h3>OnionService On-Demand</h3>
-					<p>Host a static website and make it accessible through the Tor Browser without worrying about
-						setting up a server.</p>
-				</div>
-				<div class="featureImage website">
-				</div>
-			</div>
-			<div class="contentItem standardItem">
-				<div class="description">
-					<h3>Ephemeral Chat</h3>
-					<p>Create temporary meeting rooms for discussing important information off the record. No accounts
-						required.</p>
-				</div>
-				<div class="featureImage chat">
+				<div class="group">
+					<div class="description">
+						<h4>More Than Sharing</h4>
+						<p>OnionShare allows you to quickly host an onion site, chat, and create a private dropdown in addition to sharing files!</p>
+					</div>
+					<div class="mobileImageContainer">
+						<img src="design-system/images/more-cover.png" alt="UI from OnionShare desktop showing Share, Receive, Host a Website, and Chat functionality.">
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="#" class="content centeredContent contentRow tertiaryContent wrapper">
-			<h2>Included With</h2>
-			<div class="contentRowContent">
-				<div class="contentItem blockContent">
+		<section class="cardSection">
+			<div class="wrapper">
+				<h3>Included With</h3>
+				<div class="groupRow card">
 					<div class="description">
-						<div class="icon full qubes"></div>
+						<img class="icon osIcon iconLarge" src="design-system/images/logo/qubes-logo-lm.png" alt="QubesOS Logo">
 						<p>Qubes OS is a reasonably secure operating system.</p>
-						<a href="https://www.qubes-os.org/" rel="noopener noreferrer nofollow" target="_blank">Learn
-							about Qubes OS</a>
+						<p class="meta"><a href="https://www.qubes-os.org/" target="_blank" rel="noopener noreferrer">Learn about QubesOS</a></p>
 					</div>
-				</div>
-				<div class="contentItem blockContent">
 					<div class="description">
-						<div class="icon full tails"></div>
-						<p>Tails is a portable operating system that protects against surveillance and censorship.</p>
-						<a href="https://tails.net/" rel="noopener noreferrer nofollow" target="_blank">Learn about
-							Tails</a>
+						<img class="icon osIcon iconLarge" src="design-system/images/logo/tails-logo-lm.png" alt="Tails Logo">
+						<p>Tails is a Tor-based OS loaded from a USB stick.</p>
+						<p class="meta"><a href="https://tails.net/" target="_blank" rel="noopener noreferrer">Learn about Tails</a></p>	
 					</div>
-				</div>
-				<div class="contentItem blockContent">
 					<div class="description">
-						<div class="icon full whonix"></div>
-						<p>Whonix is software that can anonymize everything you do online.</p>
-						<a href="https://www.whonix.org/" rel="noopener noreferrer nofollow" target="_blank">Learn about
-							Whonix</a>
+						<img class="icon osIcon iconLarge" src="design-system/images/logo/whonix-logo-lm.png" alt="Whonix Logo">
+						<p>Whonix uses VMs for OS functionality to achieve security through isolation.</p>
+						<p class="meta"><a href="https://www.whonix.org/" target="_blank" rel="noopener noreferrer">Learn about Whonix</a></p>
 					</div>
-				</div>
-				<div class="contentItem blockContent">
 					<div class="description">
-						<div class="icon full parrot"></div>
+						<img class="icon iconLarge" src="design-system/images/logo/parrot-logo-lm.png" alt="ParrotOS Logo">
 						<p>Parrot OS is an operating system for developers and security specialists.</p>
-						<a href="https://parrotsec.org/" rel="noopener noreferrer nofollow" target="_blank">Learn about
-							Parrot OS</a>
+						<p class="meta"><a href="https://parrotsec.org/" target="_blank" rel="noopener noreferrer">Learn about Parrot OS</a></p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="content contentRow centeredContent secondaryContent wrapper">
-			<p class="emoji">🐦</p>
-			<h2>Twittersphere</h2>
-			<div class="contentRowContent">
-				<div class="contentItem blockContent">
+		<section class="cardSection">
+			<div class="wrapper">
+				<h3>Partnering Orgs</h3>
+				<div class="groupRow card partnerCard">
 					<div class="description">
-						<div class="icon large matteo"></div>
-						<p>Onionshare's got you! need to send/receive files directly with the privacy protection of the
-							tor network? ✅ need to host your own &quot;hidden service&quot; .onion site in minutes via
-							the tor network? ✅ need to chat anonymously? ✅ need to get <a
-								href="https://twitter.com/hashtag/daftpunk?src=hash&amp;ref_src=twsrc%5Etfw">#daftpunk</a>
-							back together? ☹️ next version? <a
-								href="https://t.co/IpYUlJLwfz">https://t.co/IpYUlJLwfz</a></p>
-						<p>&mdash; Matteo &#40;in individual capacity&#41; &#40;@geminiimatt&#41; <a
-								href="https://twitter.com/geminiimatt/status/1363905816491925505?ref_src=twsrc%5Etfw">February
-								22, 2021</a></p>
+						<img class="icon pIcon" src="design-system/images/logo/calyx-logo.png" alt="The Calyx Institute Logo.">
+						<p class="meta"><a href="https://guardianproject.info/" target="_blank" rel="noopener noreferrer">Learn about The Calyx Institute</a></p>	
 					</div>
-				</div>
-				<div class="contentItem blockContent">
 					<div class="description">
-						<div class="icon large tor"></div>
-						<p>Send and receive files, host a site, and chat privately over the Tor network with OnionShare.
-							💜🧅 <a href="https://t.co/YgUr1enyXd" rel="noopener noreferrer nofollow"
-								target="_blank">https://t.co/YgUr1enyXd</a></p>
-						<p>&mdash; The Tor Project &#40;@torproject&#41; <a
-								href="https://twitter.com/torproject/status/1364371346910629889?ref_src=twsrc%5Etfw"
-								rel="noopener noreferrer nofollow" target="_blank">February 24, 2021</a></p>
+						<img class="icon pIcon" src="design-system/images/logo/guardian-logo.png" alt="Guardian Project Logo.">
+						<p class="meta"><a href="https://guardianproject.info/" target="_blank" rel="noopener noreferrer">Learn about Guardian Project</a></p>	
+					</div>
+					<div class="description">
+						<img class="icon pIcon" src="design-system/images/logo/scidsg-logo.png" alt="Science & Design Logo">
+						<p class="meta"><a href="https://scidsg.org" target="_blank" rel="noopener noreferrer">Learn about Science & Design</a></p>
+					</div>
+					<div class="description">
+						<img class="icon pIcon" src="design-system/images/logo/tor-logo.png" alt="Tor Project Logo">
+						<p class="meta"><a href="https://torproject.org" target="_blank" rel="noopener noreferrer">Learn about Tor Project</a></p>
 					</div>
 				</div>
 			</div>
@@ -220,14 +180,14 @@
 
 	</main>
 
-	<footer class="wrapper">
-		<p>OnionShare was developed by <a href="https://twitter.com/micahflee" target="_blank"
-				rel="noopener noreferrer nofollow">Micah Lee</a>, et al. and is open source, released under the GPLv3.
-		</p>
-		<p>Like all software, OnionShare may contain bugs or vulnerabilities.</p>
-		<p>🧅 http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ <a href="/onion.txt"
-				target="_blank" rel="noopener noreferrer nofollow">(proof)</a>
-		</p>
+	<footer>
+		<div class="wrapper">
+			<p>OnionShare was developed by <a href="https://twitter.com/micahflee" target="_blank" rel="noopener noreferrer nofollow">Micah Lee</a>, et al. and is open source, released under the GPLv3.</p>
+			<p>Like all software, OnionShare may contain bugs or vulnerabilities.</p>
+			<p>🧅 http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/ <a href="/onion.txt" target="_blank" rel="noopener noreferrer nofollow">(proof)</a></p>
+			<p><a href="privacy/">Privacy policy</a></p>
+			<p class="byline">Site design by <a href="https://scidsg.org" target="_blank" rel="noopener noreferrer">Science & Design, Inc.</a></p>
+		</div>
 	</footer>
 
 </body>

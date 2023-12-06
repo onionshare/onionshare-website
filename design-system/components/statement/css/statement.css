@@ -6,32 +6,38 @@
 
 }
 
-.statement {
-  text-align: center;
+.statementContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.statement a {
-  text-decoration: none;
+.statement {
+  display: flex;
+  align-self: center;
+}
+
+.statement.description {
+  margin: 0;
 }
 
 .statement p {
-  font-size: calc(var(--font-size-2) * .75);
-  line-height: var(--line-height-2);
-  font-family: var(--font-serif);
-  text-align: center;
-  margin: 0 auto;
+  font-size: var(--font-size-4);
+}
+
+@media only screen and (max-width: 960px) {
+  .statement p {
+    font-size: calc(var(--font-size-4) * .9);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .statement p {
+    font-size: calc(var(--font-size-4) * .8);
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .statement p {
-    font-size: calc(var(--font-size-2) * .7);
-    line-height: calc(var(--line-height-2) * .95);
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .statement p {
-    font-size: calc(var(--font-size-2) * .65);
-    line-height: calc(var(--line-height-2) * .85);
+    font-size: calc(var(--font-size-4) * .8);
   }
 }
