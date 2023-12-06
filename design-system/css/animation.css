@@ -1,23 +1,3 @@
-@keyframes toast {
-  0% {
-		transform: translateY(0);
-    opacity: 0;
-    z-index: 4;
-	}
-	3%, 50% {
-		transform: translateY(-1rem);
-		opacity: 1;
-	}
-	53%, 100% {
-		transform: translateY(0);
-		opacity: 0;
-    z-index: 5;
-	}
-  100% {
-    z-index: -3 !important;
-  }
-}
-
 @keyframes floating {
   0% {
     transform: translate(-50%, -50%);

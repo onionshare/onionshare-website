@@ -1,0 +1,110 @@
+@media (prefers-color-scheme: light) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+#login {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#login .icon {
+  max-width: 64px;
+  margin-top: 0;
+}
+
+#login h2 {
+  margin-top: var(--spacing-small);
+  text-align: center;
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-heading);
+  transition: .3s;
+}
+
+#login *, #login *:before, #login *:after {
+  box-sizing: inherit;
+}
+
+#login .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#login .meta {
+  text-align: center;
+}
+
+#login .description {
+  max-width: 480px;
+  width: 100%;
+  padding: var(--spacing-large) !important;
+  align-items: flex-start;
+  height: auto;
+  transition: .3s;
+}
+
+.loginBody {
+  height: 100vh;
+}
+
+.loginBody .wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.loginBody #content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loginBody div:not(.banner) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#login .description input + .btn {
+  width: 100%;
+  justify-content: center;
+  padding: var(--spacing-base) !important;
+  font-size: var(--font-size-body);
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+  #login h2 {
+    font-size: calc(var(--font-size-2) * .9);  
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+  #login .description {
+    padding: var(--spacing-medium) !important;
+  }
+
+  #login h2 {
+    font-size: calc(var(--font-size-2) * .7);  
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #login .description {
+    padding: var(--spacing-medium) !important;
+    width: 95%;
+  }
+
+}

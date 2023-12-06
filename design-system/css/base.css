@@ -1,18 +1,66 @@
 @media (prefers-color-scheme: light) {
   ::selection {
-    background-color: var(--color-dark);
-    color: var(--font-color-light);
+      background-color: rgba(78, 13, 78, 1);;
+      color: var(--color-light);
+  }
+
+  :focus {
+    outline-color: rgba(78, 13, 78, 1) !important;
+  }
+
+  input {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border: var(--border-dark);
+  }
+
+  input[type="search"] {
+    background-image: url("../../design-system/images/input/icon-search-lm.png");
+  }
+
+  a {
+    color: var(--color-dark);
+  }
+
+  body {
+    background-color: rgba(78, 13, 78, .04);
+  }
+
+  ol, ul, dl {
+    color: var(--color-dark);
   }
 }
 
 @media (prefers-color-scheme: dark) {
+  ::selection {
+      background-color: var(--color-light);
+      color: var(--color-dark);
+  }
+
   body {
     background-color: var(--color-dark);
   }
 
-  ::selection {
-    background-color: #f2f2f2;
-    color: var(--color-dark);
+  input {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: var(--border-light-1);
+  }
+
+  label {
+   color: var(--color-light);
+  }
+
+  input[type="search"] {
+    background-image: url("../../design-system/images/input/icon-search-dm.png");
+  }
+
+  a {
+    color: var(--color-light);
+  }
+
+  ol, ul, dl {
+    color: var(--color-light);
   }
 }
 
@@ -26,85 +74,115 @@
   outline: solid;
 }
 
-html {}
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-body {
-  min-width: 375px;
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-.wrapper {
-  padding-left: var(--spacing-xlarge) !important;
-  padding-right: var(--spacing-xlarge) !important;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section {
-  margin-bottom: calc(var(--spacing-xxlarge) * 3);
-}
-
 .hidden {
-  opacity: none !important;
   display: none !important;
 }
 
-.container {
-  position: fixed;
-  top: 88px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-bottom: 0;
+input {
+  padding: var(--spacing-base);
+  font-size: var(--font-size-body);
+  max-width: 480px;
+  width: 100%;
+  border-radius: var(--radius-soft);
+  font-family: 'Sans';
+}
+
+input:focus {
+  text-decoration: none;
+}
+
+input[type="search"] {
+  background-size: 1.25rem;
+  background-position: .75rem center;
+  background-repeat: no-repeat;
+  padding-left: calc(var(--spacing-xlarge) * .85);
+}
+
+label + input {
+  margin-top: var(--spacing-small);
+}
+
+input + .btn {
+  margin-top: var(--spacing-medium);
+}
+
+.label {
+  font-family: 'Sans Bold';
+}
+
+label {
+  font-family: 'Sans Bold';
+  font-size: var(--font-size-small) !important;
+}
+
+input + label {
+  margin-top: var(--spacing-medium);
+}
+
+html {
+  scroll-padding-top: calc(var(--spacing-xxlarge) * 1.5);
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
 
 a {
   cursor: pointer;
 }
 
+dl dt, dl dd {
+  line-height: var(--line-height-base);
+}
+
 p + ul {
-  margin-top: var(--spacing-medium);
+  margin-left: var(--spacing-base);
 }
 
 ul {
-  font-size: var(--font-size-small);
+  margin: var(--spacing-small) 0;
 }
 
 ul li {
-  margin-bottom: var(--spacing-small);
+  margin: var(--spacing-base) 0;
+  line-height: var(--line-height-base);
 }
 
-@media only screen and (max-width: 960px) {
-  .wrapper {
-    padding-left: var(--spacing-large) !important;
-    padding-right: var(--spacing-large) !important;
-  }
+ul li:first-of-type {
+  margin: 0;
+}
 
-  section {
-    margin-bottom: calc(var(--spacing-xxlarge) * 2.5);
-  }
+img {
+  margin: var(--spacing-base) 0;
+  width: 100%;
+}
+
+header, article, section, footer {
+  display: flex;
+  justify-content: center;
+}
+
+.statementContainer, section:not(.intro) {
+  padding: calc(var(--spacing-xlarge) * 1.5) 0 var(--spacing-base) 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  padding: 0 var(--spacing-large);
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
   .wrapper {
-    padding-left: var(--spacing-medium) !important;
-    padding-right: var(--spacing-medium) !important;
+    padding: 0 var(--spacing-medium);
   }
+
+  .statementContainer, section:not(.intro) {
+  padding: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
+}
+
 }

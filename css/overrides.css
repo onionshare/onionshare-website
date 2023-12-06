@@ -1,0 +1,62 @@
+/* The Simple Design System is made with ❤️ by Glenn Sorrentino - https://glennsorrentino.com */
+/* Please consider contributing! */
+
+/* Add your custom styles in this file... */
+
+@media (prefers-color-scheme: light) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+.logoMark {
+	background-image: url('../design-system/images/logo/onionshare-logo-lm.png');
+	height: var(--size-logo);
+	width: var(--size-logo);
+	background-position: center;
+	background-size: contain;
+}
+
+.card .description {
+	align-items: center;
+	text-align: center;
+}
+
+.btn {
+	color: rgba(78, 13, 78, 1);
+}
+
+.primaryBtn {
+	background-color: rgba(78, 13, 78, 1);
+	color: white;
+}
+
+.byline {
+	margin-top: var(--spacing-base);
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}

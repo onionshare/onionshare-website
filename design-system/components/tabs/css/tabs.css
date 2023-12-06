@@ -1,15 +1,10 @@
 @media (prefers-color-scheme: light) {
   .tabs {
-    border-bottom: var(--border-lm);
+    background-color: white;
   }
 
   .tabs a:hover {
-    border-bottom: 3px solid var(--color-dark);
     background-color: var(--color-shade);
-  }
-
-  .tabs a.selected {
-    border-bottom: 3px solid var(--color-dark) !important;
   }
 
   .tabContainerScrolled {
@@ -24,16 +19,10 @@
 
 @media (prefers-color-scheme: dark) {
   .tabs {
-    border-bottom: var(--border-dm);
   }
 
   .tabs a:hover {
-    border-bottom: 3px solid var(--color-light);
     background-color: var(--color-dark-1);
-  }
-
-  .tabs a.selected {
-    border-bottom: 3px solid var(--color-light)  !important;
   }
 
   .tabContainerScrolled {
@@ -42,31 +31,25 @@
 }
 
 .tabs.wrapper {
-  width: 100%;
+  width: auto;
   z-index: 1;
-}
-
-.tabs h2 {
-  font-size: var(--font-size-body);
-  line-height: 0;
-  display: inline;
-  margin: 0 var(--spacing-medium) 0 0;
 }
 
 .tabs {
   overflow: auto;
   white-space: nowrap;
-  margin-bottom: calc(var(--spacing-xxlarge) * 2);
+  margin: 0 auto;
+  padding: 0 var(--spacing-base);
 }
 
-.tabs a {
+.tabs ul a {
   display: inline-block;
-  padding: var(--spacing-base) var(--spacing-base) calc(var(--spacing-base) - 3px) var(--spacing-base);
+  padding: var(--spacing-medium) var(--spacing-base);
   text-decoration: none;
-  font-size: var(--font-size-small);
-  border-bottom: 3px solid rgba(0,0,0,0);
+  font-size: var(--font-size-smaller);
   cursor: pointer;
   border-radius: 2px 2px 0 0;
+  height: auto;
 }
 
 .tabs a.selected {
@@ -88,6 +71,9 @@
   line-height: inherit;
 }
 
+@media only screen and (max-width: 1280px) {
+}
+
 @media only screen and (max-width: 960px) {
 }
 
@@ -102,4 +88,7 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .tabs {
+    padding: 0 var(--spacing-small);
+  }
 }

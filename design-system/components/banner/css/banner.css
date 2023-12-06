@@ -1,0 +1,109 @@
+@media (prefers-color-scheme: light) {
+  .banner {
+    background-color: var(--color-dark);
+  }
+
+  .banner p, .banner a {
+    color: var(--color-light) !important;
+  }
+
+  .bannerBtn {
+    background-image: url('../../../images/banner/dm-icon-close.png');
+    color: var(--color-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .banner {
+    background-color: var(--color-light);
+  }
+
+  .banner p, .banner a {
+    color: var(--color-dark) !important;
+  }
+
+  .bannerBtn {
+    background-image: url('../../../images/banner/lm-icon-close.png');
+    color: var(--color-dark);
+  }
+}
+
+.banner {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.banner p {
+  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: var(--font-size-smaller);
+}
+
+.banner + header {
+  top: 40px !important;
+}
+
+.banner.hidden + header {
+  top: 0px !important;
+}
+
+.banner + header ~ div .intro .category {
+  margin-top: 40px !important;
+}
+
+.banner + header ~ div .intro h2:not(.category + h2){
+  margin-top: 40px !important;
+}
+
+.banner.hidden + header ~ div .intro h2:not(.category + h2){
+  margin-top: 0px !important;
+}
+
+.banner.hidden + header ~ div .intro .category {
+  margin-top: 0px !important;
+}
+
+.bannerBtn {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: var(--spacing-large);
+  height: var(--spacing-large);
+  margin-right: var(--spacing-medium);
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerBtn {
+    margin-right: var(--spacing-medium);
+  }
+
+  .banner p {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner p {
+    font-size: var(--font-size-smaller);
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .banner p {
+    font-size: calc(var(--font-size-smaller) * .9);
+  }
+
+}
