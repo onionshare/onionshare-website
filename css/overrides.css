@@ -4,7 +4,14 @@
 /* Add your custom styles in this file... */
 
 @media (prefers-color-scheme: light) {
+.btn {
+	color: rgba(78, 13, 78, 1);
+}
 
+.primaryBtn {
+	background-color: rgba(78, 13, 78, 1);
+	color: white;
+}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,14 +31,7 @@
 	text-align: center;
 }
 
-.btn {
-	color: rgba(78, 13, 78, 1);
-}
 
-.primaryBtn {
-	background-color: rgba(78, 13, 78, 1);
-	color: white;
-}
 
 .byline {
 	margin-top: var(--spacing-base);
