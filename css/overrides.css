@@ -16,8 +16,11 @@
 
 @media (prefers-color-scheme: dark) {
 
+.osIcon,
+.pIcon {
+  filter: invert(1) saturate(0);
 }
-
+	
 .logoMark {
 	background-image: url('../design-system/images/logo/onionshare-logo-lm.png');
 	height: var(--size-logo);
