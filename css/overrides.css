@@ -4,13 +4,24 @@
 /* Add your custom styles in this file... */
 
 @media (prefers-color-scheme: light) {
+.btn {
+	color: rgba(78, 13, 78, 1);
+}
 
+.primaryBtn {
+	background-color: rgba(78, 13, 78, 1);
+	color: white;
+}
 }
 
 @media (prefers-color-scheme: dark) {
 
+.osIcon,
+.pIcon,
+.logoMark {
+  filter: invert(1) saturate(0);
 }
-
+	
 .logoMark {
 	background-image: url('../design-system/images/logo/onionshare-logo-lm.png');
 	height: var(--size-logo);
@@ -24,14 +35,7 @@
 	text-align: center;
 }
 
-.btn {
-	color: rgba(78, 13, 78, 1);
-}
 
-.primaryBtn {
-	background-color: rgba(78, 13, 78, 1);
-	color: white;
-}
 
 .byline {
 	margin-top: var(--spacing-base);
