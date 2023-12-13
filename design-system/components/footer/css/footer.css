@@ -19,6 +19,7 @@ footer {
 
 footer p {
   margin: 0;
+  word-break: break-word;
 }
 
 footer p.donate {
