@@ -129,7 +129,7 @@
 .pIcon {
   width: 100% !important;
   max-width: 66% !important;
-  height: auto !important;
+  height: fit-content !important;
 }
 
 .partnerCard .description {
