@@ -68,7 +68,6 @@ header .logo {
   height: var(--size-logo);
   padding: calc(var(--spacing-medium) * 1.125) 0;
   line-height: var(--line-height-base);
-  display: flex;
   width: fit-content;
   position: relative;
   top: -1px;
@@ -111,7 +110,11 @@ nav.staged {
   display: none;
 }
 
-.open {
+header.open {
+  border-radius: var(--radius-header) var(--radius-header) 0 0 !important;
+}
+
+ul.open {
   display: initial !important;
 }
 
@@ -168,7 +171,7 @@ nav .badge {
 header.island {
   width: fit-content;
   margin: var(--spacing-base) auto 0 auto;
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-header);
 }
 
 header.island .wrapper {
@@ -195,7 +198,7 @@ header.island nav ul li a.wrapper {
   @media (prefers-color-scheme: light) {
     header nav ul {
       box-shadow: var(--shadow-lm);
-      background-color: var(--color-light);
+      background-color: var(--color-light-translucent);
       border: var(--border-dark);
     }
 
@@ -207,9 +210,8 @@ header.island nav ul li a.wrapper {
   @media (prefers-color-scheme: dark) {
     header nav ul {
       box-shadow: var(--shadow-dm);
-      background-color: var(--color-shade-dm);
+      background-color: var(--color-dark-translucent);
       border: var(--border-light);
-
     }
 
     header nav ul li a:hover {
@@ -248,15 +250,15 @@ header.island nav ul li a.wrapper {
   }
 
  header.island nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 56px;
-    right: 0;
-    width: max-content;
+    position: fixed;
+    top: 60px;
+    right: -1px;
+    width: 100%;
     z-index: 1;
     padding: var(--spacing-small) 0;
-    align-items: flex-start;
-    border-radius: var(--radius-soft);
+    border-radius: 0 0 var(--radius-header) var(--radius-header);
+    backdrop-filter: blur(var(--spacing-base));
+    -webkit-backdrop-filter: blur(var(--spacing-base));
   }
 
   header nav ul li a.wrapper {

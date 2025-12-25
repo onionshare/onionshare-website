@@ -12,6 +12,7 @@ $(document).ready(function() {
 
   $('.mobileNav').on('click', function() {
     $('header nav ul').toggleClass('open');
+    $('header').toggleClass('open');
     if ($('.mobileNav').attr('aria-expanded') == 'false') {
       $('.mobileNav').attr('aria-expanded', 'true');
     } else {
@@ -21,6 +22,7 @@ $(document).ready(function() {
 
   $('NAV li').on('click', function() {
     $('header nav ul').removeClass('open');
+    $('header').removeClass('open');
   });
 
   $('.bannerBtn').on('click', function() {
