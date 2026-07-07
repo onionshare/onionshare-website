@@ -1,0 +1,4 @@
+Contact: mailto:collective@lockdown.systems
+Expires: 2036-07-07T00:00
+Preferred-Languages: en
+Canonical: https://onionshare.org/.well-known/security.txt
